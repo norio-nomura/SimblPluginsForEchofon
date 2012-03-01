@@ -44,6 +44,7 @@
         if ([statusIdsStrings length]) {
             NSArray* statusIdStrings = [statusIdsStrings componentsSeparatedByString:@","];
             NSUInteger statusId = [[statusIdStrings objectAtIndex:0]longLongValue];
+            BOOL changed = NO;
             if (statusId) {
                 id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
                 id<EchofonTimelineController> friends,mentions,directMessages;
@@ -53,21 +54,27 @@
                 if (account.lastFriendsId < statusId) {
                     [account __setLastFriendsId:statusId];
                     [friends scrollToUnread];
+                    changed = YES;
                 }
                 if ([statusIdStrings count]>1) {
                     statusId = [[statusIdStrings objectAtIndex:1]longLongValue];
                     if (account.lastMentionsId < statusId) {
                         [account __setLastMentionsId:statusId];
                         [mentions scrollToUnread];
+                        changed = YES;
                     }
                     if ([statusIdStrings count]>2) {
                         statusId = [[statusIdStrings objectAtIndex:2]longLongValue];
                         if (account.lastMessagesId < statusId) {
                             [account __setLastMessagesId:statusId];
                             [directMessages scrollToUnread];
+                            changed = YES;
                         }
                     }
                 }
+            }
+            if (changed) {
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"AccountDidSyncNotification" object:account];
             }
         }
     }

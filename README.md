@@ -5,7 +5,7 @@ A [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) Plugin which adds [Tw
 How to install
 --------------
 1. Make sure you have [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) installed.
-2. Download [TweetMarkerForEchofon-1.1.bundle.zip](http://github.com/downloads/norio-nomura/TweetMarkerForEchofon/TweetMarkerForEchofon-1.1.bundle.zip)
+2. Download [TweetMarkerForEchofon-1.2.bundle.zip](http://github.com/downloads/norio-nomura/TweetMarkerForEchofon/TweetMarkerForEchofon-1.2.bundle.zip)
 3. Extract to `~/Library/Application Support/SIMBL/Plugins`
 4. Restart Echofon
 

@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C010FE914F76255004F01A6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C010FE814F76255004F01A6 /* Cocoa.framework */; };
+		6C010FF314F76255004F01A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C010FF114F76255004F01A6 /* InfoPlist.strings */; };
+		6C010FFC14F7629C004F01A6 /* TweetMarkerForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */; };
+		6C01100314F7929F004F01A6 /* TweetMarkerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01100214F7929F004F01A6 /* TweetMarkerClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C010FE514F76255004F01A6 /* TweetMarkerForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetMarkerForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C010FE814F76255004F01A6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6C010FEB14F76255004F01A6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6C010FEC14F76255004F01A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6C010FED14F76255004F01A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C010FF014F76255004F01A6 /* TweetMarkerForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetMarkerForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6C010FF214F76255004F01A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C010FF414F76255004F01A6 /* TweetMarkerForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetMarkerForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6C010FFA14F7629C004F01A6 /* TweetMarkerForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerForEchofon.h; sourceTree = "<group>"; };
+		6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerForEchofon.m; sourceTree = "<group>"; };
+		6C01100114F7929F004F01A6 /* TweetMarkerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerClient.h; sourceTree = "<group>"; };
+		6C01100214F7929F004F01A6 /* TweetMarkerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerClient.m; sourceTree = "<group>"; };
+		6C197AB614FF44DD00E1667A /* TweetMarkerAPI_KEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetMarkerAPI_KEY.h; sourceTree = "<group>"; };
+		6C39580A14FE1AD900426C2E /* EchofonProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C010FE214F76255004F01A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C010FE914F76255004F01A6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C010FDA14F76255004F01A6 = {
+			isa = PBXGroup;
+			children = (
+				6C010FEE14F76255004F01A6 /* TweetMarkerForEchofon */,
+				6C010FE714F76255004F01A6 /* Frameworks */,
+				6C010FE614F76255004F01A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C010FE614F76255004F01A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C010FE514F76255004F01A6 /* TweetMarkerForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C010FE714F76255004F01A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C010FE814F76255004F01A6 /* Cocoa.framework */,
+				6C010FEA14F76255004F01A6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C010FEA14F76255004F01A6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C010FEB14F76255004F01A6 /* AppKit.framework */,
+				6C010FEC14F76255004F01A6 /* CoreData.framework */,
+				6C010FED14F76255004F01A6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6C010FEE14F76255004F01A6 /* TweetMarkerForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6C197AB614FF44DD00E1667A /* TweetMarkerAPI_KEY.h */,
+				6C39580A14FE1AD900426C2E /* EchofonProtocols.h */,
+				6C010FFA14F7629C004F01A6 /* TweetMarkerForEchofon.h */,
+				6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */,
+				6C01100114F7929F004F01A6 /* TweetMarkerClient.h */,
+				6C01100214F7929F004F01A6 /* TweetMarkerClient.m */,
+				6C010FEF14F76255004F01A6 /* Supporting Files */,
+			);
+			path = TweetMarkerForEchofon;
+			sourceTree = "<group>";
+		};
+		6C010FEF14F76255004F01A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C010FF014F76255004F01A6 /* TweetMarkerForEchofon-Info.plist */,
+				6C010FF114F76255004F01A6 /* InfoPlist.strings */,
+				6C010FF414F76255004F01A6 /* TweetMarkerForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C010FE414F76255004F01A6 /* TweetMarkerForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C010FF714F76255004F01A6 /* Build configuration list for PBXNativeTarget "TweetMarkerForEchofon" */;
+			buildPhases = (
+				6C010FE114F76255004F01A6 /* Sources */,
+				6C010FE214F76255004F01A6 /* Frameworks */,
+				6C010FE314F76255004F01A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetMarkerForEchofon;
+			productName = TweetMarkerForEchofon;
+			productReference = 6C010FE514F76255004F01A6 /* TweetMarkerForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C010FDC14F76255004F01A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6C010FDF14F76255004F01A6 /* Build configuration list for PBXProject "TweetMarkerForEchofon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C010FDA14F76255004F01A6;
+			productRefGroup = 6C010FE614F76255004F01A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C010FE414F76255004F01A6 /* TweetMarkerForEchofon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C010FE314F76255004F01A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C010FF314F76255004F01A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C010FE114F76255004F01A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C010FFC14F7629C004F01A6 /* TweetMarkerForEchofon.m in Sources */,
+				6C01100314F7929F004F01A6 /* TweetMarkerClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C010FF114F76255004F01A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C010FF214F76255004F01A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C010FF514F76255004F01A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		6C010FF614F76255004F01A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		6C010FF814F76255004F01A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetMarkerForEchofon/TweetMarkerForEchofon-Prefix.pch";
+				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6C010FF914F76255004F01A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetMarkerForEchofon/TweetMarkerForEchofon-Prefix.pch";
+				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C010FDF14F76255004F01A6 /* Build configuration list for PBXProject "TweetMarkerForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C010FF514F76255004F01A6 /* Debug */,
+				6C010FF614F76255004F01A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C010FF714F76255004F01A6 /* Build configuration list for PBXNativeTarget "TweetMarkerForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C010FF814F76255004F01A6 /* Debug */,
+				6C010FF914F76255004F01A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C010FDC14F76255004F01A6 /* Project object */;
+}

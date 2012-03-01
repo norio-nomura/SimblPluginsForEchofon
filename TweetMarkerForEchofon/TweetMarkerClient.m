@@ -45,22 +45,29 @@
             NSArray* statusIdStrings = [statusIdsStrings componentsSeparatedByString:@","];
             NSUInteger statusId = [[statusIdStrings objectAtIndex:0]longLongValue];
             if (statusId) {
-                [account __setLastFriendsId:statusId];
+                id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
+                id<EchofonTimelineController> friends,mentions,directMessages;
+                object_getInstanceVariable(mainWindowController, "friends", (void**)&friends);
+                object_getInstanceVariable(mainWindowController, "mentions", (void**)&mentions);
+                object_getInstanceVariable(mainWindowController, "directMessages", (void**)&directMessages);
+                if (account.lastFriendsId < statusId) {
+                    [account __setLastFriendsId:statusId];
+                    [friends scrollToUnread];
+                }
                 if ([statusIdStrings count]>1) {
                     statusId = [[statusIdStrings objectAtIndex:1]longLongValue];
-                    if (statusId) {
+                    if (account.lastMentionsId < statusId) {
                         [account __setLastMentionsId:statusId];
+                        [mentions scrollToUnread];
                     }
                     if ([statusIdStrings count]>2) {
                         statusId = [[statusIdStrings objectAtIndex:2]longLongValue];
-                        if (statusId) {
+                        if (account.lastMessagesId < statusId) {
                             [account __setLastMessagesId:statusId];
+                            [directMessages scrollToUnread];
                         }
                     }
                 }
-                [[NSNotificationCenter defaultCenter]postNotificationName:@"AccountDidSyncNotification" object:account];
-                id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
-                [mainWindowController scrollToFirstUnread];
             }
         }
     }

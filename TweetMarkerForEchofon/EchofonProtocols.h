@@ -78,3 +78,9 @@
 - (void)scrollToFirstUnread;
 
 @end
+
+@protocol EchofonTimelineController
+
+- (void)scrollToUnread;
+
+@end

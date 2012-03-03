@@ -4,6 +4,7 @@
 //
 
 #import <objc/runtime.h>
+#import <SystemConfiguration/SystemConfiguration.h>
 #import "TweetMarkerForEchofon.h"
 #import "TweetMarkerClient.h"
 
@@ -34,7 +35,17 @@ const NSString* kTweetMarker = @"TweetMarker";
 
 @end
 
-@implementation TweetMarkerForEchofon
+NSString* kTweetMarkerBecomeReachable = @"TweetMarkerBecomeReachable";
+
+static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkConnectionFlags flags, void* info) {
+    if (flags & kSCNetworkReachabilityFlagsReachable) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:kTweetMarkerBecomeReachable object:nil];
+    }
+}
+
+@implementation TweetMarkerForEchofon {
+    SCNetworkReachabilityRef reachability;
+}
 
 /**
  * A special method called by SIMBL once the application has started and all classes are initialized.
@@ -71,9 +82,15 @@ const NSString* kTweetMarker = @"TweetMarker";
 - (id)init {
     if (self = [super init]) {
         [self installTweetMarkerClient];
+        [self registerReachability];
         [self registerNotification];
     }
     return self;
+}
+
+-(void)dealloc {
+    [self unregisterReachability];
+    [super dealloc];
 }
 
 -(void)installTweetMarkerClient {
@@ -100,6 +117,22 @@ const NSString* kTweetMarker = @"TweetMarker";
     }
 }
 
+- (void)registerReachability {
+    reachability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault,"api.tweetmarker.net");
+    if (!(reachability &&
+          SCNetworkReachabilitySetCallback(reachability, TweetMarkerReachabilityCallback, NULL) &&
+          SCNetworkReachabilityScheduleWithRunLoop(reachability, [[NSRunLoop mainRunLoop]getCFRunLoop], kCFRunLoopDefaultMode))) {
+        NSLog(@"SCNetworkReachabilitySetCallback is fail!");
+    }
+}
+
+- (void)unregisterReachability {
+    if (reachability) {
+        SCNetworkReachabilityUnscheduleFromRunLoop(reachability, [[NSRunLoop mainRunLoop]getCFRunLoop], kCFRunLoopDefaultMode);
+        CFRelease(reachability);
+    }
+}
+
 - (void) shouldGet:(NSNotification*) note {
     id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
     if (accountsManager) {
@@ -119,6 +152,7 @@ const NSString* kTweetMarker = @"TweetMarker";
     [nc addObserver:self selector:sel_get name:NSApplicationWillBecomeActiveNotification object:nil];
     [nc addObserver:self selector:sel_get name:NSApplicationWillUnhideNotification object:nil];
     [nc addObserver:self selector:sel_get name:NSWindowDidDeminiaturizeNotification object:nil];
+    [nc addObserver:self selector:sel_get name:kTweetMarkerBecomeReachable object:nil];
 }
 
 @end

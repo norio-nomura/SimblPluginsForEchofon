@@ -11,6 +11,7 @@
 		6C010FF314F76255004F01A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C010FF114F76255004F01A6 /* InfoPlist.strings */; };
 		6C010FFC14F7629C004F01A6 /* TweetMarkerForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */; };
 		6C01100314F7929F004F01A6 /* TweetMarkerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01100214F7929F004F01A6 /* TweetMarkerClient.m */; };
+		6C309430150184A7006BB8D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C30942F150184A7006BB8D0 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6C01100114F7929F004F01A6 /* TweetMarkerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerClient.h; sourceTree = "<group>"; };
 		6C01100214F7929F004F01A6 /* TweetMarkerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerClient.m; sourceTree = "<group>"; };
 		6C197AB614FF44DD00E1667A /* TweetMarkerAPI_KEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetMarkerAPI_KEY.h; sourceTree = "<group>"; };
+		6C30942F150184A7006BB8D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6C39580A14FE1AD900426C2E /* EchofonProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C309430150184A7006BB8D0 /* SystemConfiguration.framework in Frameworks */,
 				6C010FE914F76255004F01A6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +62,7 @@
 		6C010FE714F76255004F01A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C30942F150184A7006BB8D0 /* SystemConfiguration.framework */,
 				6C010FE814F76255004F01A6 /* Cocoa.framework */,
 			);
 			name = Frameworks;

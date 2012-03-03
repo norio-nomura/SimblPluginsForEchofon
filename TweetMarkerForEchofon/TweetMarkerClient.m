@@ -35,7 +35,6 @@
 }
 
 -(void)HTTPClient:(id<EchofonHTTPClient>)client didFail:(id)error {
-    NSLog(@"TweetMarkerClient %s",__func__);
 }
 
 -(void)HTTPClient:(id<EchofonHTTPClient>)client didReceiveResponse:(NSHTTPURLResponse*)response data:(NSData*)data {

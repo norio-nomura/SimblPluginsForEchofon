@@ -100,9 +100,6 @@ const NSString* kTweetMarker = @"TweetMarker";
     }
 }
 
-- (void) shouldPost:(NSNotification*) note {
-}
-
 - (void) shouldGet:(NSNotification*) note {
     id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
     if (accountsManager) {

@@ -16,9 +16,6 @@
 /* Begin PBXFileReference section */
 		6C010FE514F76255004F01A6 /* TweetMarkerForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetMarkerForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C010FE814F76255004F01A6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		6C010FEB14F76255004F01A6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		6C010FEC14F76255004F01A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		6C010FED14F76255004F01A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C010FF014F76255004F01A6 /* TweetMarkerForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetMarkerForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6C010FF214F76255004F01A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C010FF414F76255004F01A6 /* TweetMarkerForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetMarkerForEchofon-Prefix.pch"; sourceTree = "<group>"; };
@@ -63,19 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				6C010FE814F76255004F01A6 /* Cocoa.framework */,
-				6C010FEA14F76255004F01A6 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6C010FEA14F76255004F01A6 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C010FEB14F76255004F01A6 /* AppKit.framework */,
-				6C010FEC14F76255004F01A6 /* CoreData.framework */,
-				6C010FED14F76255004F01A6 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		6C010FEE14F76255004F01A6 /* TweetMarkerForEchofon */ = {

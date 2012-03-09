@@ -260,6 +260,7 @@
 				6CDE8F1F150068CE004D1734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

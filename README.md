@@ -5,7 +5,7 @@ A [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) Plugin which change [
 How to install
 --------------
 1. Make sure you have [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) installed.
-2. Download [MyTrendsForEchofon-1.1.bundle.zip](http://github.com/downloads/norio-nomura/MyTrendsForEchofon/MyTrendsForEchofon-1.1.bundle.zip)
+2. Download [MyTrendsForEchofon-1.2.bundle.zip](http://github.com/downloads/norio-nomura/MyTrendsForEchofon/MyTrendsForEchofon-1.2.bundle.zip) (2012/03/14 updated)
 3. Extract to `~/Library/Application Support/SIMBL/Plugins`
 4. Restart Echofon
 

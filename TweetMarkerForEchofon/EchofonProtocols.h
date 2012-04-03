@@ -40,12 +40,18 @@
 
 @end
 
+@protocol EchofonNSData
+
+- (NSDictionary*)JSONValue;
+
+@end
+
 @protocol EchofonHTTPClient;
 
 @protocol EchofonHTTPClientDelegate
 
--(void)HTTPClient:(id<EchofonHTTPClient>)client didFail:(id)error;
--(void)HTTPClient:(id<EchofonHTTPClient>)client didReceiveResponse:(NSHTTPURLResponse*)response data:(NSData*)data;
+- (void)HTTPClient:(id<EchofonHTTPClient>)client didFail:(id)error;
+- (void)HTTPClient:(id<EchofonHTTPClient>)client didReceiveResponse:(NSHTTPURLResponse*)response data:(NSData<EchofonNSData>*)data;
 
 @end
 
@@ -61,6 +67,7 @@
 - (id)initWithDelegate:(id<EchofonHTTPClientDelegate>)delegate;
 - (void)cancel;
 - (void)post:(NSString*)url body:(NSData*)body header:(NSDictionary*)header;
+- (void)get:(NSString*)url;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params header:(NSDictionary*)header;
 

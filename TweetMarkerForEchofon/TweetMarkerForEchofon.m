@@ -15,22 +15,19 @@ const NSString* kTweetMarker = @"TweetMarker";
 - (void)__setLastFriendsId:(NSUInteger)statusId {
     [self __setLastFriendsId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
-    [tweetMarker postCollections:[NSArray arrayWithObject:@"timeline"]
-                       statusIds:[NSArray arrayWithObject:[NSString stringWithFormat:@"%lu",statusId]]];
+    [tweetMarker postCollection:@"timeline" statusId:statusId];
 }
 
 - (void)__setLastMentionsId:(NSUInteger)statusId {
     [self __setLastMentionsId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
-    [tweetMarker postCollections:[NSArray arrayWithObject:@"mentions"]
-                       statusIds:[NSArray arrayWithObject:[NSString stringWithFormat:@"%lu",statusId]]];
+    [tweetMarker postCollection:@"mentions" statusId:statusId];
 }
 
 - (void)__setLastMessagesId:(NSUInteger)statusId {
     [self __setLastMessagesId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
-    [tweetMarker postCollections:[NSArray arrayWithObject:@"messages"]
-                       statusIds:[NSArray arrayWithObject:[NSString stringWithFormat:@"%lu",statusId]]];
+    [tweetMarker postCollection:@"messages" statusId:statusId];
 }
 
 @end

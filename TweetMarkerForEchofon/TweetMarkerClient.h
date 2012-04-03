@@ -10,12 +10,12 @@
 @interface TweetMarkerClient : NSObject<EchofonHTTPClientDelegate>
 
 @property (nonatomic,assign) id<EchofonAccount> account;
-@property (nonatomic,copy) NSString* oauthConsumerKey;
-@property (nonatomic,copy) NSString* oauthConsumerSecret;
-@property (nonatomic,copy) NSString* oauthToken;
-@property (nonatomic,copy) NSString* oauthTokenSecret;
+@property (nonatomic,copy) NSString *oauthConsumerKey;
+@property (nonatomic,copy) NSString *oauthConsumerSecret;
+@property (nonatomic,copy) NSString *oauthToken;
+@property (nonatomic,copy) NSString *oauthTokenSecret;
 
--(void)postCollections:(NSArray*)collections statusIds:(NSArray*)statusIds;
+-(void)postCollection:(NSString*)collection statusId:(NSUInteger)statusId;
 -(void)getAllCollections;
 
 @end

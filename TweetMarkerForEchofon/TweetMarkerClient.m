@@ -8,18 +8,18 @@
 #import "TweetMarkerAPI_KEY.h"
 
 @interface TweetMarkerClient ()
-@property (nonatomic,retain) NSObject<EchofonHTTPClient>* clientPost;
-@property (nonatomic,retain) NSObject<EchofonHTTPClient>* clientGet;
+@property (nonatomic,retain) NSObject<EchofonHTTPClient> *clientPost;
+@property (nonatomic,retain) NSObject<EchofonHTTPClient> *clientGet;
 @end
 
 @implementation TweetMarkerClient {
-    NSObject<EchofonHTTPClient>* clientPost;
-    NSObject<EchofonHTTPClient>* clientGet;
+    NSObject<EchofonHTTPClient> *clientPost;
+    NSObject<EchofonHTTPClient> *clientGet;
     id<EchofonAccount> account;
-    NSString* oauthConsumerKey;
-    NSString* oauthConsumerSecret;
-    NSString* oauthToken;
-    NSString* oauthTokenSecret;
+    NSString *oauthConsumerKey;
+    NSString *oauthConsumerSecret;
+    NSString *oauthToken;
+    NSString *oauthTokenSecret;
 }
 
 @synthesize clientPost, clientGet, account, oauthConsumerKey, oauthConsumerSecret, oauthToken,oauthTokenSecret;
@@ -37,40 +37,34 @@
 -(void)HTTPClient:(id<EchofonHTTPClient>)client didFail:(id)error {
 }
 
--(void)HTTPClient:(id<EchofonHTTPClient>)client didReceiveResponse:(NSHTTPURLResponse*)response data:(NSData*)data {
+-(void)HTTPClient:(id<EchofonHTTPClient>)client didReceiveResponse:(NSHTTPURLResponse*)response data:(NSData<EchofonNSData>*)data {
     if (data && 200 == [response statusCode]) {
-        NSString* statusIdsStrings = [[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]autorelease];
-        if ([statusIdsStrings length]) {
-            NSArray* statusIdStrings = [statusIdsStrings componentsSeparatedByString:@","];
-            NSUInteger statusId = [[statusIdStrings objectAtIndex:0]longLongValue];
+        NSDictionary *json = [data JSONValue];
+        if (json && [json isKindOfClass:[NSDictionary class]]) {
             BOOL changed = NO;
-            if (statusId) {
-                id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
-                id<EchofonTimelineController> friends,mentions,directMessages;
-                object_getInstanceVariable(mainWindowController, "friends", (void**)&friends);
-                object_getInstanceVariable(mainWindowController, "mentions", (void**)&mentions);
-                object_getInstanceVariable(mainWindowController, "directMessages", (void**)&directMessages);
-                if (account.lastFriendsId < statusId) {
-                    [account __setLastFriendsId:statusId];
-                    [friends scrollToUnread];
-                    changed = YES;
-                }
-                if ([statusIdStrings count]>1) {
-                    statusId = [[statusIdStrings objectAtIndex:1]longLongValue];
-                    if (account.lastMentionsId < statusId) {
-                        [account __setLastMentionsId:statusId];
-                        [mentions scrollToUnread];
-                        changed = YES;
-                    }
-                    if ([statusIdStrings count]>2) {
-                        statusId = [[statusIdStrings objectAtIndex:2]longLongValue];
-                        if (account.lastMessagesId < statusId) {
-                            [account __setLastMessagesId:statusId];
-                            [directMessages scrollToUnread];
-                            changed = YES;
-                        }
-                    }
-                }
+            id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
+            id<EchofonTimelineController> friends,mentions,directMessages;
+            object_getInstanceVariable(mainWindowController, "friends", (void**)&friends);
+            object_getInstanceVariable(mainWindowController, "mentions", (void**)&mentions);
+            object_getInstanceVariable(mainWindowController, "directMessages", (void**)&directMessages);
+            NSUInteger statusId = 0;
+            statusId = [[[json objectForKey:@"timeline"] objectForKey:@"id"]integerValue];
+            if (account.lastFriendsId < statusId) {
+                [account __setLastFriendsId:statusId];
+                [friends scrollToUnread];
+                changed = YES;
+            }
+            statusId = [[[json objectForKey:@"mentions"] objectForKey:@"id"]integerValue];
+            if (account.lastMentionsId < statusId) {
+                [account __setLastMentionsId:statusId];
+                [mentions scrollToUnread];
+                changed = YES;
+            }
+            statusId = [[[json objectForKey:@"messages"] objectForKey:@"id"]integerValue];
+            if (account.lastMessagesId < statusId) {
+                [account __setLastMessagesId:statusId];
+                [directMessages scrollToUnread];
+                changed = YES;
             }
             if (changed) {
                 [[NSNotificationCenter defaultCenter]postNotificationName:@"AccountDidSyncNotification" object:account];
@@ -118,7 +112,8 @@
     return [array componentsJoinedByString:@"'&'"];
 }
 
--(void)postCollections:(NSArray *)collections statusIds:(NSArray *)statusIds{
+-(void)postCollection:(NSString*)collection statusId:(NSUInteger)statusId
+{
     [clientPost cancel];
     NSDictionary* oauthParams = [self addOAuthParameters:nil
                                                      url:(id<EchofonNSString>)@"https://api.twitter.com/1/account/verify_credentials.json"
@@ -134,14 +129,10 @@
     self.clientPost = [[[NSClassFromString(@"HTTPClient") alloc]initWithDelegate:self]autorelease];
     clientPost.userAgent = [NSClassFromString(@"Preferences") userAgent];
     if (kTweetMarkerAPI_KEY) {
-        NSString* collection = [collections componentsJoinedByString:@","];
-        NSString* url = [NSString stringWithFormat:@"https://api.tweetmarker.net/v1/lastread?collection=%@&username=%@&user_id=%lu&api_key=%@",
-                         collection,
-                         account.username,
-                         account.userId,
-                         kTweetMarkerAPI_KEY];
-        [clientPost post:url
-                    body:[[statusIds componentsJoinedByString:@","]dataUsingEncoding:NSUTF8StringEncoding]
+        NSString* urlString = [NSString stringWithFormat:@"https://api.tweetmarker.net/v2/lastread?api_key=%@&username=%@",
+                               kTweetMarkerAPI_KEY, account.username];
+        [clientPost post:urlString
+                    body:[[NSString stringWithFormat:@"{\"%@\":{\"id\":%lu}}",collection,statusId]dataUsingEncoding:NSUTF8StringEncoding]
                   header:headers];
     }
 }
@@ -150,14 +141,8 @@
     [clientGet cancel];
     self.clientGet = [[[NSClassFromString(@"HTTPClient") alloc]initWithDelegate:self]autorelease];
     clientGet.userAgent = [NSClassFromString(@"Preferences") userAgent];
-    NSString* collection = [[NSArray arrayWithObjects:@"timeline", @"mentions", @"messages", nil] componentsJoinedByString:@","];
-    NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            collection, @"collection",
-                            account.username, @"username",
-                            [NSString stringWithFormat:@"%lu", account.userId], @"user_id",
-                            kTweetMarkerAPI_KEY, @"api_key",
-                            nil];
-    [clientGet get:@"https://api.tweetmarker.net/v1/lastread" parameters:params];
+    NSString* urlString = [NSString stringWithFormat:@"https://api.tweetmarker.net/v2/lastread?api_key=%@&username=%@&collection=timeline&collection=mentions&collection=messages", kTweetMarkerAPI_KEY, account.username];
+    [clientGet get:urlString];
 }
 
 @end

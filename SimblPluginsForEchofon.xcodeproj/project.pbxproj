@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C09B0E415366950004258BD /* SimblPluginsForEchofon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6C09B0E515366950004258BD /* Build configuration list for PBXAggregateTarget "SimblPluginsForEchofon" */;
+			buildPhases = (
+				6C09B11215366FD8004258BD /* ShellScript */,
+			);
+			dependencies = (
+				6C09B0E915366961004258BD /* PBXTargetDependency */,
+				6C09B0EB15366961004258BD /* PBXTargetDependency */,
+				6C09B0ED15366961004258BD /* PBXTargetDependency */,
+			);
+			name = SimblPluginsForEchofon;
+			productName = SimblPluginsForEchofon;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		6C09B0CF1536682F004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C010FE514F76255004F01A6;
+			remoteInfo = TweetMarkerForEchofon;
+		};
+		6C09B0D915366853004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C197A9914FEFAAA00E1667A;
+			remoteInfo = MyTrendsForEchofon;
+		};
+		6C09B0E21536685B004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CDE8F0B150068CE004D1734;
+			remoteInfo = AbsoluteTimeStringForEchofon;
+		};
+		6C09B0E815366961004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C197A9814FEFAAA00E1667A;
+			remoteInfo = MyTrendsForEchofon;
+		};
+		6C09B0EA15366961004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C010FE414F76255004F01A6;
+			remoteInfo = TweetMarkerForEchofon;
+		};
+		6C09B0EC15366961004258BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDE8F0A150068CE004D1734;
+			remoteInfo = AbsoluteTimeStringForEchofon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TweetMarkerForEchofon.xcodeproj; sourceTree = "<group>"; };
+		6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MyTrendsForEchofon.xcodeproj; sourceTree = "<group>"; };
+		6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AbsoluteTimeStringForEchofon.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6C09B0BC153667DB004258BD = {
+			isa = PBXGroup;
+			children = (
+				6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */,
+				6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */,
+				6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		6C09B0C91536682E004258BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C09B0D01536682F004258BD /* TweetMarkerForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C09B0D315366852004258BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C09B0DA15366853004258BD /* MyTrendsForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C09B0DC1536685A004258BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		6C09B0BE153667DB004258BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6C09B0C1153667DB004258BD /* Build configuration list for PBXProject "SimblPluginsForEchofon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C09B0BC153667DB004258BD;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6C09B0DC1536685A004258BD /* Products */;
+					ProjectRef = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
+				},
+				{
+					ProductGroup = 6C09B0D315366852004258BD /* Products */;
+					ProjectRef = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
+				},
+				{
+					ProductGroup = 6C09B0C91536682E004258BD /* Products */;
+					ProjectRef = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6C09B0E415366950004258BD /* SimblPluginsForEchofon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6C09B0D01536682F004258BD /* TweetMarkerForEchofon.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TweetMarkerForEchofon.bundle;
+			remoteRef = 6C09B0CF1536682F004258BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C09B0DA15366853004258BD /* MyTrendsForEchofon.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyTrendsForEchofon.bundle;
+			remoteRef = 6C09B0D915366853004258BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AbsoluteTimeStringForEchofon.bundle;
+			remoteRef = 6C09B0E21536685B004258BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C09B11215366FD8004258BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo ${TARGET_BUILD_DIR}\ncd ${TARGET_BUILD_DIR}\nls -la\nzip -r ${SRCROOT}/downloads/${PRODUCT_NAME}-${VERSION}.zip *";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C09B0E915366961004258BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyTrendsForEchofon;
+			targetProxy = 6C09B0E815366961004258BD /* PBXContainerItemProxy */;
+		};
+		6C09B0EB15366961004258BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TweetMarkerForEchofon;
+			targetProxy = 6C09B0EA15366961004258BD /* PBXContainerItemProxy */;
+		};
+		6C09B0ED15366961004258BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AbsoluteTimeStringForEchofon;
+			targetProxy = 6C09B0EC15366961004258BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6C09B0C3153667DB004258BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6C09B0C4153667DB004258BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		6C09B0E615366950004258BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+			};
+			name = Debug;
+		};
+		6C09B0E715366950004258BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C09B0C1153667DB004258BD /* Build configuration list for PBXProject "SimblPluginsForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C09B0C3153667DB004258BD /* Debug */,
+				6C09B0C4153667DB004258BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C09B0E515366950004258BD /* Build configuration list for PBXAggregateTarget "SimblPluginsForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C09B0E615366950004258BD /* Debug */,
+				6C09B0E715366950004258BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C09B0BE153667DB004258BD /* Project object */;
+}

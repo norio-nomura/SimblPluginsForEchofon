@@ -6,10 +6,10 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -93,23 +93,5 @@
    <ArchiveAction
       buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "cd ${BUILT_PRODUCTS_DIR}&#10;zip -r ${SRCROOT}/downloads/${FULL_PRODUCT_NAME}.zip ${FULL_PRODUCT_NAME}">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "6CDE8F0A150068CE004D1734"
-                     BuildableName = "AbsoluteTimeStringForEchofon.bundle"
-                     BlueprintName = "AbsoluteTimeStringForEchofon"
-                     ReferencedContainer = "container:AbsoluteTimeStringForEchofon.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
    </ArchiveAction>
 </Scheme>

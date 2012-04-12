@@ -9,14 +9,14 @@
             buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C010FE414F76255004F01A6"
-               BuildableName = "TweetMarkerForEchofon.bundle"
-               BlueprintName = "TweetMarkerForEchofon"
-               ReferencedContainer = "container:TweetMarkerForEchofon.xcodeproj">
+               BlueprintIdentifier = "6C09B0E415366950004258BD"
+               BuildableName = "SimblPluginsForEchofon"
+               BlueprintName = "SimblPluginsForEchofon"
+               ReferencedContainer = "container:SimblPluginsForEchofon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -43,14 +43,14 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "mkdir -p ~/Library/Application\ Support/SIMBL/Plugins/&#10;cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;[ -d ${FULL_PRODUCT_NAME} ] &amp;&amp; mv ${FULL_PRODUCT_NAME} ${FULL_PRODUCT_NAME}.backup&#10;ln -sf ${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME} ${FULL_PRODUCT_NAME}">
+               scriptText = "mkdir -p ~/Library/Application\ Support/SIMBL/Plugins/&#10;cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;for bundle in ${TARGET_BUILD_DIR}/*.bundle; do&#10;    export bundle_name=`basename ${bundle}`&#10;    [ -d ${bundle_name} ] &amp;&amp; mv ${bundle_name} ${bundle_name}.backup&#10;    ln -sf ${bundle} ${bundle_name}&#10;done">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "6C010FE414F76255004F01A6"
-                     BuildableName = "TweetMarkerForEchofon.bundle"
-                     BlueprintName = "TweetMarkerForEchofon"
-                     ReferencedContainer = "container:TweetMarkerForEchofon.xcodeproj">
+                     BlueprintIdentifier = "6C09B0E415366950004258BD"
+                     BuildableName = "SimblPluginsForEchofon"
+                     BlueprintName = "SimblPluginsForEchofon"
+                     ReferencedContainer = "container:SimblPluginsForEchofon.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -61,14 +61,14 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;rm -rf ${FULL_PRODUCT_NAME}&#10;[ -d ${FULL_PRODUCT_NAME}.backup ] &amp;&amp; mv ${FULL_PRODUCT_NAME}.backup ${FULL_PRODUCT_NAME}">
+               scriptText = "cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;for bundle in ${TARGET_BUILD_DIR}/*.bundle; do&#10;    export bundle_name=`basename ${bundle}`&#10;    rm -rf ${bundle_name}&#10;    [ -d ${bundle_name}.backup ] &amp;&amp; mv ${bundle_name}.backup ${bundle_name}&#10;done">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "6C010FE414F76255004F01A6"
-                     BuildableName = "TweetMarkerForEchofon.bundle"
-                     BlueprintName = "TweetMarkerForEchofon"
-                     ReferencedContainer = "container:TweetMarkerForEchofon.xcodeproj">
+                     BlueprintIdentifier = "6C09B0E415366950004258BD"
+                     BuildableName = "SimblPluginsForEchofon"
+                     BlueprintName = "SimblPluginsForEchofon"
+                     ReferencedContainer = "container:SimblPluginsForEchofon.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -92,6 +92,6 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      revealArchiveInOrganizer = "YES">
+      revealArchiveInOrganizer = "NO">
    </ArchiveAction>
 </Scheme>

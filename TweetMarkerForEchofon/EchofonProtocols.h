@@ -59,12 +59,12 @@
 
 @property (copy) NSString* userAgent;
 @property (assign) id<EchofonHTTPClientDelegate> delegate;
-@property (copy) NSString* consumerToken;
-@property (copy) NSString* consumerSecret;
+@property (copy) NSString* oauthConsumerKey;
+@property (copy) NSString* oauthConsumerSecret;
 @property (copy) NSString* oauthToken;
 @property (copy) NSString* oauthTokenSecret;
 
-- (id)initWithDelegate:(id<EchofonHTTPClientDelegate>)delegate;
+- (id<EchofonHTTPClient>)initWithDelegate:(id<EchofonHTTPClientDelegate>)delegate;
 - (void)cancel;
 - (void)post:(NSString*)url body:(NSData*)body header:(NSDictionary*)header;
 - (void)get:(NSString*)url;
@@ -89,5 +89,17 @@
 @protocol EchofonTimelineController
 
 - (void)scrollToUnread;
+
+@end
+
+@protocol EchofonTrendsConnection<EchofonHTTPClientDelegate>
+
+@property (copy) NSString* consumerToken;
+@property (copy) NSString* consumerSecret;
+@property (copy) NSString* accessToken;
+@property (copy) NSString* accessSecret;
+
+- (NSString*)apiBase;
+- (void)createConnection;
 
 @end

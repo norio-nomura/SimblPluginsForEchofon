@@ -31,26 +31,20 @@
 		<dict>
 			<key>BundleIdentifier</key>
 			<string>com.echofon.Echofon</string>
-			<key>MaxBundleVersion</key>
-			<string>203</string>
 			<key>MinBundleVersion</key>
-			<string>2</string>
+			<string>203</string>
 		</dict>
 		<dict>
 			<key>BundleIdentifier</key>
 			<string>com.echofon.Echofon-AppStore</string>
-			<key>MaxBundleVersion</key>
-			<string>201</string>
 			<key>MinBundleVersion</key>
-			<string>2</string>
+			<string>201</string>
 		</dict>
 		<dict>
 			<key>BundleIdentifier</key>
 			<string>com.echofon.Echofon-Premium-AppStore</string>
-			<key>MaxBundleVersion</key>
-			<string>201</string>
 			<key>MinBundleVersion</key>
-			<string>2</string>
+			<string>201</string>
 		</dict>
 	</array>
 </dict>

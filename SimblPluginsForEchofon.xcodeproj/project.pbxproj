@@ -14,8 +14,8 @@
 				6C09B11215366FD8004258BD /* ShellScript */,
 			);
 			dependencies = (
-				6C09B0E915366961004258BD /* PBXTargetDependency */,
 				6C09B0EB15366961004258BD /* PBXTargetDependency */,
+				6C09B0E915366961004258BD /* PBXTargetDependency */,
 				6C09B0ED15366961004258BD /* PBXTargetDependency */,
 			);
 			name = SimblPluginsForEchofon;
@@ -72,12 +72,14 @@
 		6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TweetMarkerForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MyTrendsForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AbsoluteTimeStringForEchofon.xcodeproj; sourceTree = "<group>"; };
+		6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		6C09B0BC153667DB004258BD = {
 			isa = PBXGroup;
 			children = (
+				6C63B52C1536D8C000BB56B9 /* Common */,
 				6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */,
 				6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */,
 				6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */,
@@ -106,6 +108,14 @@
 				6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6C63B52C1536D8C000BB56B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

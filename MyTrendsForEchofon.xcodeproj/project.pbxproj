@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0FB1811537B53D00222042 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EchofonProtocols.h; path = ../Common/EchofonProtocols.h; sourceTree = "<group>"; };
 		6C197A9914FEFAAA00E1667A /* MyTrendsForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTrendsForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C197A9C14FEFAAA00E1667A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6C197A9F14FEFAAA00E1667A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -24,7 +25,6 @@
 		6C197AA814FEFAAA00E1667A /* MyTrendsForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrendsForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6C197AAE14FEFB6E00E1667A /* MyTrendsForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTrendsForEchofon.h; sourceTree = "<group>"; };
 		6C197AAF14FEFB6E00E1667A /* MyTrendsForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTrendsForEchofon.m; sourceTree = "<group>"; };
-		6C197AB214FEFEF700E1667A /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
 		6C197AB314FF331400E1667A /* MyTrendsAccountSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTrendsAccountSettings.h; sourceTree = "<group>"; };
 		6C197AB414FF331400E1667A /* MyTrendsAccountSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTrendsAccountSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 		6C197AA214FEFAAA00E1667A /* MyTrendsForEchofon */ = {
 			isa = PBXGroup;
 			children = (
-				6C197AB214FEFEF700E1667A /* EchofonProtocols.h */,
+				6C0FB1811537B53D00222042 /* EchofonProtocols.h */,
 				6C197AAE14FEFB6E00E1667A /* MyTrendsForEchofon.h */,
 				6C197AAF14FEFB6E00E1667A /* MyTrendsForEchofon.m */,
 				6C197AB314FF331400E1667A /* MyTrendsAccountSettings.h */,

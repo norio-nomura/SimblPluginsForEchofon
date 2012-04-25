@@ -6,6 +6,7 @@ Plugins
 adds [TweetMarker](http://tweetmarker.net/) support to [Echofon for Mac](http://www.echofon.com/twitter/mac).
 - MyTrendsForEchofon Plugin changes [Echofon for Mac](http://www.echofon.com/twitter/mac)'s trends location as set on [twitter.com](https://twitter.com).
 - AbsoluteTimeStringForEchofon changes [Echofon for Mac](http://www.echofon.com/twitter/mac) to display absolute times.
+- ReadabilityForEchofon adds "Read Later with [Readability](http://www.readability.com)" to [Echofon for Mac](http://www.echofon.com/twitter/mac)'s contextual menu of URL.
 
 How to install
 --------------

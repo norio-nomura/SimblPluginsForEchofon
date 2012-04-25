@@ -5,6 +5,29 @@
 
 #import <Cocoa/Cocoa.h>
 
+@protocol EchofonKeychain
++ (void)addInternetPassword:(NSString*)password name:(NSString*)name url:(NSURL*)url;
++ (void)deleteInternetPasswordWithName:(NSString*)name url:(NSURL*)url;
++ (NSString*)findInternetPasswordWithName:(NSString*)name url:(NSURL*)url;
++ (NSString*)findInternetPasswordWithName:(NSString*)name url:(NSURL*)url status:(id)status;
++ (void)setInternetPassword:(NSString*)password name:(NSString*)name url:(NSURL*)url;
++ (void)testInternetPasswordWithName:(NSString*)name url:(NSURL*)url;
+@end
+
+@protocol EchofonNSData
+
+- (NSDictionary*)JSONValue;
+
+@end
+
+@protocol EchofonNSString
+
++ (NSString<EchofonNSString>*)HMAC_SHA1SignatureForText:(NSString<EchofonNSString>*)text usingSecret:(NSString<EchofonNSString>*)secret;
+- (NSString<EchofonNSString>*)decodeURIComponent;
+- (NSString<EchofonNSString>*)encodeURIComponent;
+
+@end
+
 @protocol EchofonAccount
 
 @property (copy) NSString* username;
@@ -33,16 +56,23 @@
 
 @end
 
+@protocol EchofonMenuController
+
+- (NSString<EchofonNSString>*)selectedUrl;
+
+@end
+
+@protocol EchofonAppController
+
+- (id<EchofonMenuController>)menu;
+- (void)handleURLEvent:(NSAppleEventDescriptor *)event withReplyEvent: (NSAppleEventDescriptor *)replyEvent;
+
+@end
+
 @protocol EchofonTwitterClient
 
 @property (copy) NSString* consumerToken;
 @property (copy) NSString* consumerSecret;
-
-@end
-
-@protocol EchofonNSData
-
-- (NSDictionary*)JSONValue;
 
 @end
 
@@ -70,13 +100,6 @@
 - (void)get:(NSString*)url;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params header:(NSDictionary*)header;
-
-@end
-
-@protocol EchofonNSString
-
-+ (NSString<EchofonNSString>*)HMAC_SHA1SignatureForText:(NSString<EchofonNSString>*)text usingSecret:(NSString<EchofonNSString>*)secret;
-- (NSString<EchofonNSString>*)encodeURIComponent;
 
 @end
 

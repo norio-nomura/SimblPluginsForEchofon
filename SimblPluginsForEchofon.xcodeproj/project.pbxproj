@@ -192,7 +192,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  cd ${TARGET_BUILD_DIR}\n  zip -r ${SRCROOT}/downloads/${PRODUCT_NAME}-${VERSION}.zip *\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  cd ${TARGET_BUILD_DIR}\n  zip -r ${SRCROOT}/downloads/${PRODUCT_NAME}-${VERSION}.zip *.bundle\nfi";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

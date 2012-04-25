@@ -79,7 +79,7 @@
     NSMutableDictionary* dic = params ? [[params mutableCopy]autorelease] : [NSMutableDictionary dictionary];
     [dic setObject:oauthConsumerKey forKey:@"oauth_consumer_key"];
     [dic setObject:oauthToken forKey:@"oauth_token"];
-    [dic setObject:[NSString stringWithFormat:@"%qi",timestamp] forKey:@"oauth_timestamp"];
+    [dic setObject:[NSString stringWithFormat:@"%0.0f",timestamp] forKey:@"oauth_timestamp"];
     [dic setObject:@"HMAC-SHA1" forKey:@"oauth_signature_method"];
     [dic setObject:@"1.0" forKey:@"oauth_version"];
     CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);

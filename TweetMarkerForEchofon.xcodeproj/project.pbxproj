@@ -12,6 +12,7 @@
 		6C010FFC14F7629C004F01A6 /* TweetMarkerForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */; };
 		6C01100314F7929F004F01A6 /* TweetMarkerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01100214F7929F004F01A6 /* TweetMarkerClient.m */; };
 		6C309430150184A7006BB8D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C30942F150184A7006BB8D0 /* SystemConfiguration.framework */; };
+		6CFB712C153E905E0062D46A /* TweetMarkerAPI_KEY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB712B153E905D0062D46A /* TweetMarkerAPI_KEY.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6C197AB614FF44DD00E1667A /* TweetMarkerAPI_KEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetMarkerAPI_KEY.h; sourceTree = "<group>"; };
 		6C30942F150184A7006BB8D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6C63B52E1536D8E500BB56B9 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EchofonProtocols.h; path = ../Common/EchofonProtocols.h; sourceTree = "<group>"; };
+		6CFB712B153E905D0062D46A /* TweetMarkerAPI_KEY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerAPI_KEY.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				6C63B52E1536D8E500BB56B9 /* EchofonProtocols.h */,
 				6C197AB614FF44DD00E1667A /* TweetMarkerAPI_KEY.h */,
+				6CFB712B153E905D0062D46A /* TweetMarkerAPI_KEY.m */,
 				6C010FFA14F7629C004F01A6 /* TweetMarkerForEchofon.h */,
 				6C010FFB14F7629C004F01A6 /* TweetMarkerForEchofon.m */,
 				6C01100114F7929F004F01A6 /* TweetMarkerClient.h */,
@@ -155,6 +158,7 @@
 			files = (
 				6C010FFC14F7629C004F01A6 /* TweetMarkerForEchofon.m in Sources */,
 				6C01100314F7929F004F01A6 /* TweetMarkerClient.m in Sources */,
+				6CFB712C153E905E0062D46A /* TweetMarkerAPI_KEY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

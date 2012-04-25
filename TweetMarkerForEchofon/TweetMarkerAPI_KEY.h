@@ -6,6 +6,6 @@
 #ifndef TweetMarkerForEchofon_TweetMarkerAPI_KEY_h
 #define TweetMarkerForEchofon_TweetMarkerAPI_KEY_h
 
-const NSString* kTweetMarkerAPI_KEY = nil; // You need get key from http://tweetmarker.net/
+extern NSString * const kTweetMarkerAPI_KEY;
 
 #endif

@@ -1,17 +1,18 @@
 SIMBL Plugins for Echofon
 ====================================
-Plugins
+Plugins for [Echofon for Mac](http://www.echofon.com/twitter/mac)
 ------- 
 - TweetMarkerForEchofon Plugin
-adds [TweetMarker](http://tweetmarker.net/) support to [Echofon for Mac](http://www.echofon.com/twitter/mac).
-- MyTrendsForEchofon Plugin changes [Echofon for Mac](http://www.echofon.com/twitter/mac)'s trends location as set on [twitter.com](https://twitter.com).
-- AbsoluteTimeStringForEchofon changes [Echofon for Mac](http://www.echofon.com/twitter/mac) to display absolute times.
-- ReadabilityForEchofon adds "Read Later with [Readability](http://www.readability.com)" to [Echofon for Mac](http://www.echofon.com/twitter/mac)'s contextual menu of URL.
+adds [TweetMarker](http://tweetmarker.net/) support.
+- MyTrendsForEchofon Plugin changes trends location as set on [twitter.com](https://twitter.com).
+- AbsoluteTimeStringForEchofon changes to display absolute times.
+- ReadabilityForEchofon adds "Read Later with [Readability](http://www.readability.com)" item to contextual menu of URL.
+- RetweetWithCommentSetInReplyToForEchofon change "Retweet with Comment" to use in-reply-to.
 
 How to install
 --------------
 1. Make sure you have [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) installed.
-2. Download [SimblPluginsForEchofon-1.0.zip](http://github.com/downloads/norio-nomura/SimblPluginsForEchofon/SimblPluginsForEchofon-1.0.zip) (2012/04/25 updated)
+2. Download [SimblPluginsForEchofon-1.1.zip](http://github.com/downloads/norio-nomura/SimblPluginsForEchofon/SimblPluginsForEchofon-1.1.zip) (2012/04/30 updated)
 3. Extract to `~/Library/Application Support/SIMBL/Plugins`
 4. Restart Echofon
 

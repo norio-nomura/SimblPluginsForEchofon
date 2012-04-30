@@ -315,7 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.0;
+				VERSION = 1.1;
 			};
 			name = Debug;
 		};
@@ -323,7 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.0;
+				VERSION = 1.1;
 			};
 			name = Release;
 		};

@@ -18,6 +18,7 @@
 				6C09B0E915366961004258BD /* PBXTargetDependency */,
 				6C63B5251536CD2900BB56B9 /* PBXTargetDependency */,
 				6C09B0ED15366961004258BD /* PBXTargetDependency */,
+				6CE4B69B154E48B90007B344 /* PBXTargetDependency */,
 			);
 			name = SimblPluginsForEchofon;
 			productName = SimblPluginsForEchofon;
@@ -81,6 +82,20 @@
 			remoteGlobalIDString = 6C63B4F81536CB0F00BB56B9;
 			remoteInfo = ReadabilityForEchofon;
 		};
+		6CE4B691154E42AE0007B344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CE4B66F154E422F0007B344;
+			remoteInfo = RetweetWithCommentSetInReplyToForEchofon;
+		};
+		6CE4B69A154E48B90007B344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CE4B66E154E422F0007B344;
+			remoteInfo = RetweetWithCommentSetInReplyToForEchofon;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +104,7 @@
 		6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AbsoluteTimeStringForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ReadabilityForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
+		6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RetweetWithCommentSetInReplyToForEchofon.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -100,6 +116,7 @@
 				6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */,
 				6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */,
 				6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */,
+				6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +161,14 @@
 			sourceTree = "<group>";
 			wrapsLines = 0;
 		};
+		6CE4B68B154E42AE0007B344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CE4B692154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -173,6 +198,10 @@
 				{
 					ProductGroup = 6C63B5181536CBAA00BB56B9 /* Products */;
 					ProjectRef = 6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */;
+				},
+				{
+					ProductGroup = 6CE4B68B154E42AE0007B344 /* Products */;
+					ProjectRef = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
 				},
 				{
 					ProductGroup = 6C09B0C91536682E004258BD /* Products */;
@@ -215,6 +244,13 @@
 			remoteRef = 6C63B51E1536CBAA00BB56B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		6CE4B692154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RetweetWithCommentSetInReplyToForEchofon.bundle;
+			remoteRef = 6CE4B691154E42AE0007B344 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -254,6 +290,11 @@
 			isa = PBXTargetDependency;
 			name = ReadabilityForEchofon;
 			targetProxy = 6C63B5241536CD2900BB56B9 /* PBXContainerItemProxy */;
+		};
+		6CE4B69B154E48B90007B344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RetweetWithCommentSetInReplyToForEchofon;
+			targetProxy = 6CE4B69A154E48B90007B344 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

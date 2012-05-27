@@ -52,14 +52,14 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     TweetMarkerForEchofon* plugin = [TweetMarkerForEchofon sharedInstance];
     // ... do whatever
     if (plugin) {
-        Class targetClass = objc_getClass("Account");
-        Class newClass = objc_getClass("NSObject");
-        method_exchangeImplementations(class_getInstanceMethod(targetClass, @selector(setLastFriendsId:)), 
-                                       class_getInstanceMethod(newClass, @selector(__setLastFriendsId:)));
-        method_exchangeImplementations(class_getInstanceMethod(targetClass, @selector(setLastMentionsId:)), 
-                                       class_getInstanceMethod(newClass, @selector(__setLastMentionsId:)));
-        method_exchangeImplementations(class_getInstanceMethod(targetClass, @selector(setLastMessagesId:)), 
-                                       class_getInstanceMethod(newClass, @selector(__setLastMessagesId:)));
+        Class accountClass = objc_getClass("Account");
+        Class rootClass = objc_getClass("NSObject");
+        method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastFriendsId:)), 
+                                       class_getInstanceMethod(rootClass, @selector(__setLastFriendsId:)));
+        method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastMentionsId:)), 
+                                       class_getInstanceMethod(rootClass, @selector(__setLastMentionsId:)));
+        method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastMessagesId:)),
+                                       class_getInstanceMethod(rootClass, @selector(__setLastMessagesId:)));
     }
 }
 

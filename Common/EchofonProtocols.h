@@ -58,6 +58,7 @@
 
 @protocol EchofonMenuController
 
+- (NSMenu*)urlMenu;
 - (NSString<EchofonNSString>*)selectedUrl;
 
 @end

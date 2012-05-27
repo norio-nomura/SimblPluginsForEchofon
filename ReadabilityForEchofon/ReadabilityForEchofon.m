@@ -56,11 +56,9 @@
 - (id)init
 {
     if (self = [super init]) {
-        id appController = [[NSApplication sharedApplication]delegate];
-        id menuController = nil;
-        object_getInstanceVariable(appController, "menu", (void**)&menuController);
-        NSMenu *urlMenu = nil;
-        object_getInstanceVariable(menuController, "urlMenu", (void**)&urlMenu);
+        id<EchofonAppController> appController = (id<EchofonAppController>)[[NSApplication sharedApplication]delegate];
+        id<EchofonMenuController> menuController = [appController menu];
+        NSMenu *urlMenu = [menuController urlMenu];
         if (urlMenu) {
             NSMenuItem *item = [[[NSMenuItem alloc]initWithTitle:@"Read Later with Readability"
                                                          action:@selector(sendReadLaterWithReadability:)
@@ -84,9 +82,8 @@
 
 - (IBAction)sendReadLaterWithReadability:(id)sender
 {
-    id appController = [[NSApplication sharedApplication]delegate];
-    id<EchofonMenuController> menuController = nil;
-    object_getInstanceVariable(appController, "menu", (void**)&menuController);
+    id<EchofonAppController> appController = (id<EchofonAppController>)[[NSApplication sharedApplication]delegate];
+    id<EchofonMenuController> menuController = [appController menu];
     
     id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager")
                                                   performSelector:@selector(sharedAccountManager)];

@@ -14,7 +14,6 @@
 - (void)__handleURLEvent:(NSAppleEventDescriptor *)event withReplyEvent: (NSAppleEventDescriptor *)replyEvent
 {
     NSString *url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
-    NSLog(@"%@", url);
     if ([url hasPrefix:[NSString stringWithFormat:@"echofon:%@", kReadabilityAPI_CALLBACK_URL]]) {
         [[[ReadabilityForEchofon sharedInstance]client]accessToken:url];
     } else {
@@ -62,7 +61,6 @@
         object_getInstanceVariable(appController, "menu", (void**)&menuController);
         NSMenu *urlMenu = nil;
         object_getInstanceVariable(menuController, "urlMenu", (void**)&urlMenu);
-        NSLog(@"%@", urlMenu);
         if (urlMenu) {
             NSMenuItem *item = [[[NSMenuItem alloc]initWithTitle:@"Read Later with Readability"
                                                          action:@selector(sendReadLaterWithReadability:)
@@ -98,8 +96,6 @@
         self.client = [[[ReadabilityClient alloc]initWithUserName:username]autorelease];
     }
     [_client addBookmark:[menuController selectedUrl]];
-    
-    NSLog(@"%@",sender);
 }
 
 @end

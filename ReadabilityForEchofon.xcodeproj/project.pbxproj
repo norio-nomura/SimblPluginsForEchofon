@@ -237,7 +237,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReadabilityForEchofon/ReadabilityForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "ReadabilityForEchofon/ReadabilityForEchofon-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -246,11 +245,12 @@
 		6C63B50D1536CB0F00BB56B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReadabilityForEchofon/ReadabilityForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "ReadabilityForEchofon/ReadabilityForEchofon-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

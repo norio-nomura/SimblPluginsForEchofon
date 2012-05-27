@@ -7,4 +7,6 @@
 
 @interface TweetMarkerForEchofon : NSObject
 
++ (TweetMarkerForEchofon*) sharedInstance;
+
 @end

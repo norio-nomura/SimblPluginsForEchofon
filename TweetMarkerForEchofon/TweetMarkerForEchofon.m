@@ -9,6 +9,7 @@
 #import "TweetMarkerClient.h"
 
 NSString * const kTweetMarker = @"TweetMarker";
+NSString * const kTweetMarkerMenuTitle = @"set Tweet Marker";
 
 @implementation NSObject(TweetMarkerForEchofon)
 
@@ -28,6 +29,44 @@ NSString * const kTweetMarker = @"TweetMarker";
     [self __setLastMessagesId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"messages" statusId:statusId];
+}
+
+@end
+
+@implementation NSControl(TweetMarkerForEchofon)
+
+- (void)__addedSetMenu:(NSMenu*)aMenu
+{
+    id delegate;
+    object_getInstanceVariable(self, "delegate", (void**)&delegate);
+
+    [super setMenu:aMenu];
+    
+    NSMenuItem *item = [aMenu itemWithTitle:kTweetMarkerMenuTitle];
+    if (!item) {
+        item = [[[NSMenuItem alloc]initWithTitle:kTweetMarkerMenuTitle
+                                          action:@selector(setTweetMarker:)
+                                   keyEquivalent:@""]autorelease];
+        item.target = [TweetMarkerForEchofon sharedInstance];
+        [aMenu addItem:item];
+    }
+}
+
+- (void)__exchangedSetMenu:(NSMenu*)aMenu
+{
+    id delegate;
+    object_getInstanceVariable(self, "delegate", (void**)&delegate);
+    
+    [self __exchangedSetMenu:aMenu];
+    
+    NSMenuItem *item = [aMenu itemWithTitle:kTweetMarkerMenuTitle];
+    if (!item) {
+        item = [[[NSMenuItem alloc]initWithTitle:kTweetMarkerMenuTitle
+                                          action:@selector(setTweetMarker:)
+                                   keyEquivalent:@""]autorelease];
+        item.target = [TweetMarkerForEchofon sharedInstance];
+        [aMenu addItem:item];
+    }
 }
 
 @end
@@ -60,6 +99,16 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
                                        class_getInstanceMethod(rootClass, @selector(__setLastMentionsId:)));
         method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastMessagesId:)),
                                        class_getInstanceMethod(rootClass, @selector(__setLastMessagesId:)));
+        
+        Class richTextViewClass = objc_getClass("RichTextView");
+        Class nsControlClass = objc_getClass("NSControl");
+        if (!class_addMethod(richTextViewClass,
+                             @selector(setMenu:),
+                             class_getMethodImplementation(nsControlClass, @selector(__addedSetMenu:)),
+                             method_getTypeEncoding(class_getInstanceMethod(nsControlClass, @selector(__addedSetMenu:))))) {
+            method_exchangeImplementations(class_getInstanceMethod(richTextViewClass, @selector(setMenu:)),
+                                           class_getInstanceMethod(nsControlClass, @selector(__exchangedSetMenu:)));
+        }
     }
 }
 
@@ -81,6 +130,7 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
         [self installTweetMarkerClient];
         [self registerReachability];
         [self registerNotification];
+        [self addMenuItem];
     }
     return self;
 }
@@ -150,6 +200,84 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     [nc addObserver:self selector:sel_get name:NSApplicationWillUnhideNotification object:nil];
     [nc addObserver:self selector:sel_get name:NSWindowDidDeminiaturizeNotification object:nil];
     [nc addObserver:self selector:sel_get name:kTweetMarkerBecomeReachable object:nil];
+}
+
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem
+{
+    BOOL result = NO;
+    id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
+    if (accountsManager) {
+        id<EchofonAppController> appController = (id<EchofonAppController>)[[NSApplication sharedApplication]delegate];
+        id<EchofonMenuController> menuController = [appController menu];
+        BOOL bIsContextMenu = [[menuItem menu]supermenu] == nil;
+        id<EchofonTweetCell> tweetCell = bIsContextMenu ? [menuController currentTweetCell] : [menuController selectedTweetCell];
+        if (tweetCell) {
+            id timeline = [tweetCell delegate];
+            id<EchofonAccount> account = [accountsManager currentAccount];
+            if (timeline == [appController friends] && [[tweetCell status]statusId] > [account lastFriendsId]) {
+                result = YES;
+            } else if (timeline == [appController mentions] && [[tweetCell status]statusId] > [account lastMentionsId]) {
+                result = YES;
+            } else if (timeline == [appController directMessages] && [[tweetCell status]statusId] > [account lastMessagesId]) {
+                result = YES;
+            }
+        }
+    }
+    return result;
+}
+
+- (IBAction)setTweetMarker:(id)sender
+{
+    id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
+    if (accountsManager) {
+        id<EchofonAppController> appController = (id<EchofonAppController>)[[NSApplication sharedApplication]delegate];
+        BOOL bIsContextMenu = [[(NSMenuItem*)sender menu]supermenu] == nil;
+        id<EchofonMenuController> menuController = [appController menu];
+        id<EchofonTweetCell> tweetCell = bIsContextMenu ? [menuController currentTweetCell] : [menuController selectedTweetCell];
+        if (tweetCell) {
+            BOOL bNeedNotify = NO;
+            id timeline = [tweetCell delegate];
+            id<EchofonAccount> account = [accountsManager currentAccount];
+            if (timeline == [appController friends]) {
+                [account setLastFriendsId:[[tweetCell status]statusId]];
+                bNeedNotify = YES;
+            } else if (timeline == [appController mentions]) {
+                [account setLastMentionsId:[[tweetCell status]statusId]];
+                bNeedNotify = YES;
+            } else if (timeline == [appController directMessages]) {
+                [account setLastMessagesId:[[tweetCell status]statusId]];
+                bNeedNotify = YES;
+            }
+            if (bNeedNotify) {
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"AccountDidSyncNotification" object:account];
+            }
+        }
+    }
+}
+
+- (void)addMenuItem
+{
+    NSMenu *mainMenu = [[NSApplication sharedApplication]mainMenu];
+    if (mainMenu) {
+        for (NSMenuItem *item in [mainMenu itemArray]) {
+            NSInteger index = -1;
+            for (NSMenuItem *subItem in [[item submenu]itemArray]) {
+                if (NSOrderedSame == [subItem.keyEquivalent caseInsensitiveCompare:@"L"]) {
+                    index = [[item submenu]indexOfItem:subItem];
+                    break;
+                }
+            }
+            if (index != -1) {
+                NSMenuItem *newItem = [[[NSMenuItem alloc]initWithTitle:kTweetMarkerMenuTitle
+                                                  action:@selector(setTweetMarker:)
+                                           keyEquivalent:@"M"]autorelease];
+                newItem.keyEquivalentModifierMask = NSCommandKeyMask;
+                newItem.target = self;
+                [[item submenu] insertItem:newItem atIndex:index+1];
+                break;
+            }
+        }
+    }
 }
 
 @end

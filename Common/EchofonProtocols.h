@@ -62,10 +62,25 @@
 
 @end
 
+@protocol EchofonStatus
+
+- (NSUInteger)statusId;
+
+@end
+
+@protocol EchofonTweetCell
+
+- (id<EchofonTimelineController>)delegate;
+- (id<EchofonStatus>)status;
+
+@end
+
 @protocol EchofonMenuController
 
 - (NSMenu*)urlMenu;
 - (NSString<EchofonNSString>*)selectedUrl;
+- (id<EchofonTweetCell>)currentTweetCell;
+- (id<EchofonTweetCell>)selectedTweetCell;
 
 @end
 

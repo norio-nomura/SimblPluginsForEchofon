@@ -8,7 +8,7 @@
 #import "TweetMarkerForEchofon.h"
 #import "TweetMarkerClient.h"
 
-const NSString* kTweetMarker = @"TweetMarker";
+NSString * const kTweetMarker = @"TweetMarker";
 
 @implementation NSObject(TweetMarkerForEchofon)
 
@@ -32,7 +32,7 @@ const NSString* kTweetMarker = @"TweetMarker";
 
 @end
 
-NSString* kTweetMarkerBecomeReachable = @"TweetMarkerBecomeReachable";
+NSString * const kTweetMarkerBecomeReachable = @"TweetMarkerBecomeReachable";
 
 static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkConnectionFlags flags, void* info) {
     if (flags & kSCNetworkReachabilityFlagsReachable) {

@@ -56,6 +56,12 @@
 
 @end
 
+@protocol EchofonTimelineController
+
+- (void)scrollToUnread;
+
+@end
+
 @protocol EchofonMenuController
 
 - (NSMenu*)urlMenu;
@@ -67,6 +73,9 @@
 
 - (id<EchofonMenuController>)menu;
 - (void)handleURLEvent:(NSAppleEventDescriptor *)event withReplyEvent: (NSAppleEventDescriptor *)replyEvent;
+- (id<EchofonTimelineController>)friends;
+- (id<EchofonTimelineController>)mentions;
+- (id<EchofonTimelineController>)directMessages;
 
 @end
 
@@ -101,18 +110,6 @@
 - (void)get:(NSString*)url;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params;
 - (void)get:(NSString*)url parameters:(NSDictionary*)params header:(NSDictionary*)header;
-
-@end
-
-@protocol EchofonMainWindowController
-
-- (void)scrollToFirstUnread;
-
-@end
-
-@protocol EchofonTimelineController
-
-- (void)scrollToUnread;
 
 @end
 

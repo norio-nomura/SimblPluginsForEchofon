@@ -42,11 +42,10 @@
         NSDictionary *json = [data JSONValue];
         if (json && [json isKindOfClass:[NSDictionary class]]) {
             BOOL changed = NO;
-            id<EchofonMainWindowController> mainWindowController = (id<EchofonMainWindowController>)[[[NSApplication sharedApplication]mainWindow]delegate];
-            id<EchofonTimelineController> friends,mentions,directMessages;
-            object_getInstanceVariable(mainWindowController, "friends", (void**)&friends);
-            object_getInstanceVariable(mainWindowController, "mentions", (void**)&mentions);
-            object_getInstanceVariable(mainWindowController, "directMessages", (void**)&directMessages);
+            id<EchofonAppController> appController = (id<EchofonAppController>)[[NSApplication sharedApplication]delegate];
+            id<EchofonTimelineController> friends = [appController friends];
+            id<EchofonTimelineController> mentions = [appController mentions];
+            id<EchofonTimelineController> directMessages = [appController directMessages];
             NSUInteger statusId = 0;
             statusId = [[[json objectForKey:@"timeline"] objectForKey:@"id"]integerValue];
             if (account.lastFriendsId < statusId) {

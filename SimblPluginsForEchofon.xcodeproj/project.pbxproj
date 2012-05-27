@@ -14,6 +14,7 @@
 				6C63B5301536DAC100BB56B9 /* ShellScript */,
 			);
 			dependencies = (
+				6C514D0815721C3200256D14 /* PBXTargetDependency */,
 				6C09B0EB15366961004258BD /* PBXTargetDependency */,
 				6C09B0E915366961004258BD /* PBXTargetDependency */,
 				6C63B5251536CD2900BB56B9 /* PBXTargetDependency */,
@@ -68,6 +69,20 @@
 			remoteGlobalIDString = 6CDE8F0A150068CE004D1734;
 			remoteInfo = AbsoluteTimeStringForEchofon;
 		};
+		6C514CFC1572142C00256D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C514CE0157213FD00256D14;
+			remoteInfo = DisableMarkAsReadCurrentTab;
+		};
+		6C514D0715721C3200256D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C514CDF157213FD00256D14;
+			remoteInfo = DisableMarkAsReadCurrentTab;
+		};
 		6C63B51E1536CBAA00BB56B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */;
@@ -102,6 +117,7 @@
 		6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TweetMarkerForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MyTrendsForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AbsoluteTimeStringForEchofon.xcodeproj; sourceTree = "<group>"; };
+		6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DisableMarkAsReadCurrentTab.xcodeproj; sourceTree = "<group>"; };
 		6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ReadabilityForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
 		6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RetweetWithCommentSetInReplyToForEchofon.xcodeproj; sourceTree = "<group>"; };
@@ -117,6 +133,7 @@
 				6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */,
 				6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */,
 				6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */,
+				6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +157,14 @@
 			isa = PBXGroup;
 			children = (
 				6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C514CF61572142B00256D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C514CFD1572142C00256D14 /* DisableMarkAsReadCurrentTab.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +217,10 @@
 					ProjectRef = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
 				},
 				{
+					ProductGroup = 6C514CF61572142B00256D14 /* Products */;
+					ProjectRef = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
+				},
+				{
 					ProductGroup = 6C09B0D315366852004258BD /* Products */;
 					ProjectRef = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
 				},
@@ -235,6 +264,13 @@
 			fileType = wrapper.cfbundle;
 			path = AbsoluteTimeStringForEchofon.bundle;
 			remoteRef = 6C09B0E21536685B004258BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C514CFD1572142C00256D14 /* DisableMarkAsReadCurrentTab.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DisableMarkAsReadCurrentTab.bundle;
+			remoteRef = 6C514CFC1572142C00256D14 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		6C63B51F1536CBAA00BB56B9 /* ReadabilityForEchofon.bundle */ = {
@@ -285,6 +321,11 @@
 			isa = PBXTargetDependency;
 			name = AbsoluteTimeStringForEchofon;
 			targetProxy = 6C09B0EC15366961004258BD /* PBXContainerItemProxy */;
+		};
+		6C514D0815721C3200256D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DisableMarkAsReadCurrentTab;
+			targetProxy = 6C514D0715721C3200256D14 /* PBXContainerItemProxy */;
 		};
 		6C63B5251536CD2900BB56B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

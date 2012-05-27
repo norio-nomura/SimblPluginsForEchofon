@@ -8,6 +8,7 @@ adds [TweetMarker](http://tweetmarker.net/) support.
 - AbsoluteTimeStringForEchofon changes to display absolute times.
 - ReadabilityForEchofon adds "Read Later with [Readability](http://www.readability.com)" item to contextual menu of URL.
 - RetweetWithCommentSetInReplyToForEchofon change "Retweet with Comment" to use in-reply-to.
+- DisableMarkAsReadCurrentTab disable "mark as read" when tab switching.
 
 How to install
 --------------

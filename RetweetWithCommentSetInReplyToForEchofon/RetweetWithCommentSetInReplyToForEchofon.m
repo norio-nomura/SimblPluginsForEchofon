@@ -18,8 +18,10 @@
     if (ivar) {
         [object_getIvar(self, ivar) release];
         object_setIvar(self, ivar, [status retain]);
-        if ([self respondsToSelector:@selector(textDidChange:)] &&
+        if ([self respondsToSelector:@selector(setComposing:)] &&
+            [self respondsToSelector:@selector(textDidChange:)] &&
             [self respondsToSelector:@selector(layoutViews:)]) {
+            [self performSelector:@selector(setComposing:) withObject:(id)YES];
             [self performSelector:@selector(textDidChange:) withObject:nil];
             [self performSelector:@selector(layoutViews:) withObject:nil];
         }

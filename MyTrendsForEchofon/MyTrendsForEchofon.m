@@ -11,7 +11,8 @@ const NSString* kMyTrendsAccountSettings = @"MyTrendsAccountSettings";
 
 @implementation NSObject(MyTrendsForEchofon)
 
-- (void)__getTrends {
+- (void)__getTrends
+{
     id<EchofonTrendsConnection> trendsConnection = (id<EchofonTrendsConnection>)self;
     MyTrendsAccountSettings* settings = objc_getAssociatedObject(self, kMyTrendsAccountSettings);
     if (!settings) {

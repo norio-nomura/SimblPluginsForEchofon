@@ -75,7 +75,8 @@
     return self;
 }
 
--(void)dealloc {
+-(void)dealloc
+{
     [_client release];
     [super dealloc];
 }

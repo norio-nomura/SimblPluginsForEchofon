@@ -13,19 +13,22 @@ NSString * const kTweetMarkerMenuTitle = @"set Tweet Marker";
 
 @implementation NSObject(TweetMarkerForEchofon)
 
-- (void)__setLastFriendsId:(NSUInteger)statusId {
+- (void)__setLastFriendsId:(NSUInteger)statusId
+{
     [self __setLastFriendsId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"timeline" statusId:statusId];
 }
 
-- (void)__setLastMentionsId:(NSUInteger)statusId {
+- (void)__setLastMentionsId:(NSUInteger)statusId
+{
     [self __setLastMentionsId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"mentions" statusId:statusId];
 }
 
-- (void)__setLastMessagesId:(NSUInteger)statusId {
+- (void)__setLastMessagesId:(NSUInteger)statusId
+{
     [self __setLastMessagesId:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"messages" statusId:statusId];
@@ -125,7 +128,8 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     return plugin;
 }
 
-- (id)init {
+- (id)init
+{
     if (self = [super init]) {
         [self installTweetMarkerClient];
         [self registerReachability];
@@ -135,12 +139,14 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     return self;
 }
 
--(void)dealloc {
+-(void)dealloc
+{
     [self unregisterReachability];
     [super dealloc];
 }
 
--(void)installTweetMarkerClient {
+-(void)installTweetMarkerClient
+{
     id accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
     if (accountsManager) {
         NSArray* accountControllers;
@@ -164,7 +170,8 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     }
 }
 
-- (void)registerReachability {
+- (void)registerReachability
+{
     reachability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault,"api.tweetmarker.net");
     if (!(reachability &&
           SCNetworkReachabilitySetCallback(reachability, TweetMarkerReachabilityCallback, NULL) &&
@@ -173,14 +180,16 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     }
 }
 
-- (void)unregisterReachability {
+- (void)unregisterReachability
+{
     if (reachability) {
         SCNetworkReachabilityUnscheduleFromRunLoop(reachability, [[NSRunLoop mainRunLoop]getCFRunLoop], kCFRunLoopDefaultMode);
         CFRelease(reachability);
     }
 }
 
-- (void) shouldGet:(NSNotification*) note {
+- (void) shouldGet:(NSNotification*) note
+{
     id<EchofonAccountsManager> accountsManager = [NSClassFromString(@"AccountsManager") performSelector:@selector(sharedAccountManager)];
     if (accountsManager) {
         id<EchofonAccount> account = [accountsManager currentAccount];
@@ -189,7 +198,8 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
     }
 }
 
--(void)registerNotification {
+-(void)registerNotification
+{
     NSNotificationCenter* wsnc = [[NSWorkspace sharedWorkspace] notificationCenter];
     SEL sel_get = @selector(shouldGet:);
     [wsnc addObserver:self selector:sel_get name:NSWorkspaceDidWakeNotification object:nil];

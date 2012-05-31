@@ -25,6 +25,7 @@
 + (NSString<EchofonNSString>*)HMAC_SHA1SignatureForText:(NSString<EchofonNSString>*)text usingSecret:(NSString<EchofonNSString>*)secret;
 - (NSString<EchofonNSString>*)decodeURIComponent;
 - (NSString<EchofonNSString>*)encodeURIComponent;
+- (BOOL)isAlphaNumOnly;
 
 @end
 

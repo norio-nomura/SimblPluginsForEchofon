@@ -8,7 +8,12 @@
 
 @implementation NSObject(TweetMarkerForEchofon)
 
-- (void)__markAsReadCurrentTab {
+- (void)__markAsReadCurrentTab
+{
+    NSInteger tabIndex = (NSInteger)[self performSelector:@selector(currentTabIndex)];
+    if (tabIndex>2) {
+        [self __markAsReadCurrentTab];
+    }
 }
 
 @end

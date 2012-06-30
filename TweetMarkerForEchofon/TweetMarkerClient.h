@@ -6,6 +6,13 @@
 #import <Cocoa/Cocoa.h>
 #import "EchofonProtocols.h"
 
+@protocol EchofonAccountExtended<EchofonAccount>
+
+- (void)__setLastFriendsIdTweetMarkerForEchofon:(NSUInteger)status;
+- (void)__setLastMentionsIdTweetMarkerForEchofon:(NSUInteger)status;
+- (void)__setLastMessagesIdTweetMarkerForEchofon:(NSUInteger)status;
+
+@end
 
 @interface TweetMarkerClient : NSObject<EchofonHTTPClientDelegate>
 

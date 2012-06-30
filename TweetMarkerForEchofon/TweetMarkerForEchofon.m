@@ -13,23 +13,23 @@ NSString * const kTweetMarkerMenuTitle = @"set Tweet Marker";
 
 @implementation NSObject(TweetMarkerForEchofon)
 
-- (void)__setLastFriendsId:(NSUInteger)statusId
+- (void)__setLastFriendsIdTweetMarkerForEchofon:(NSUInteger)statusId
 {
-    [self __setLastFriendsId:statusId];
+    [self __setLastFriendsIdTweetMarkerForEchofon:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"timeline" statusId:statusId];
 }
 
-- (void)__setLastMentionsId:(NSUInteger)statusId
+- (void)__setLastMentionsIdTweetMarkerForEchofon:(NSUInteger)statusId
 {
-    [self __setLastMentionsId:statusId];
+    [self __setLastMentionsIdTweetMarkerForEchofon:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"mentions" statusId:statusId];
 }
 
-- (void)__setLastMessagesId:(NSUInteger)statusId
+- (void)__setLastMessagesIdTweetMarkerForEchofon:(NSUInteger)statusId
 {
-    [self __setLastMessagesId:statusId];
+    [self __setLastMessagesIdTweetMarkerForEchofon:statusId];
     TweetMarkerClient* tweetMarker = objc_getAssociatedObject(self, kTweetMarker);
     [tweetMarker postCollection:@"messages" statusId:statusId];
 }
@@ -97,11 +97,11 @@ static void TweetMarkerReachabilityCallback(SCNetworkReachabilityRef target, SCN
         Class accountClass = objc_getClass("Account");
         Class rootClass = objc_getClass("NSObject");
         method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastFriendsId:)), 
-                                       class_getInstanceMethod(rootClass, @selector(__setLastFriendsId:)));
+                                       class_getInstanceMethod(rootClass, @selector(__setLastFriendsIdTweetMarkerForEchofon:)));
         method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastMentionsId:)), 
-                                       class_getInstanceMethod(rootClass, @selector(__setLastMentionsId:)));
+                                       class_getInstanceMethod(rootClass, @selector(__setLastMentionsIdTweetMarkerForEchofon:)));
         method_exchangeImplementations(class_getInstanceMethod(accountClass, @selector(setLastMessagesId:)),
-                                       class_getInstanceMethod(rootClass, @selector(__setLastMessagesId:)));
+                                       class_getInstanceMethod(rootClass, @selector(__setLastMessagesIdTweetMarkerForEchofon:)));
         
         Class richTextViewClass = objc_getClass("RichTextView");
         Class nsControlClass = objc_getClass("NSControl");

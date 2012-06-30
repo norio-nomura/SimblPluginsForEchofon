@@ -15,7 +15,7 @@
 @implementation TweetMarkerClient {
     NSObject<EchofonHTTPClient> *_clientPost;
     NSObject<EchofonHTTPClient> *_clientGet;
-    id<EchofonAccount> _account;
+    id<EchofonAccountExtended> _account;
     NSString *_oauthConsumerKey;
     NSString *_oauthConsumerSecret;
     NSString *_oauthToken;
@@ -52,19 +52,19 @@
             NSUInteger statusId = 0;
             statusId = [[[json objectForKey:@"timeline"] objectForKey:@"id"]integerValue];
             if (_account.lastFriendsId < statusId) {
-                [_account __setLastFriendsId:statusId];
+                [_account __setLastFriendsIdTweetMarkerForEchofon:statusId];
                 [friends scrollToUnread];
                 changed = YES;
             }
             statusId = [[[json objectForKey:@"mentions"] objectForKey:@"id"]integerValue];
             if (_account.lastMentionsId < statusId) {
-                [_account __setLastMentionsId:statusId];
+                [_account __setLastMentionsIdTweetMarkerForEchofon:statusId];
                 [mentions scrollToUnread];
                 changed = YES;
             }
             statusId = [[[json objectForKey:@"messages"] objectForKey:@"id"]integerValue];
             if (_account.lastMessagesId < statusId) {
-                [_account __setLastMessagesId:statusId];
+                [_account __setLastMessagesIdTweetMarkerForEchofon:statusId];
                 [directMessages scrollToUnread];
                 changed = YES;
             }

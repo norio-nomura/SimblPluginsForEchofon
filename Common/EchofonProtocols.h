@@ -39,10 +39,6 @@
 @property (assign) NSUInteger lastMentionsId;
 @property (assign) NSUInteger lastMessagesId;
 
-- (void)__setLastFriendsId:(NSUInteger)status;
-- (void)__setLastMentionsId:(NSUInteger)status;
-- (void)__setLastMessagesId:(NSUInteger)status;
-
 @end
 
 @protocol EchofonAccountsManager

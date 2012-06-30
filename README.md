@@ -9,7 +9,7 @@ adds [TweetMarker](http://tweetmarker.net/) support.
 - ReadabilityForEchofon adds "Read Later with [Readability](http://www.readability.com)" item to contextual menu of URL.
 - RetweetWithCommentSetInReplyToForEchofon change "Retweet with Comment" to use in-reply-to.
 - DisableMarkAsReadCurrentTab disable "mark as read" when tab switching from friends, mentions and direct messages. Additionaly, clicking current tab progress Unread Marker.
-- ExtendImageServiceForEchofon add image preview from [Twipple](http://p.twipple.jp/) and [Viddy](http://viddy.com/).
+- ExtendImageServiceForEchofon add image preview from [Camera+](http://api.camerapl.us/), [Ow.ly](http://ow.ly/), [Twipple](http://p.twipple.jp/), [yfrog.us](http://yfrog.us/) and [Viddy](http://viddy.com/).
 
 How to install
 --------------

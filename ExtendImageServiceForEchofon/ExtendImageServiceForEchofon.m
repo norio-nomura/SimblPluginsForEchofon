@@ -19,6 +19,12 @@
             result = YES;
         } else if ([url.host hasSuffix:@"viddy.com"] && [url.path hasPrefix:@"/video/"]) {
             result = YES;
+        } else if ([url.host hasSuffix:@"yfrog.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = YES;
+        } else if ([url.host hasSuffix:@"campl.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = YES;
+        } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
+            result = YES;
         }
     }
     return result;
@@ -44,6 +50,12 @@
         NSString<EchofonNSString>* lastPathComponent = (NSString<EchofonNSString>*)url.lastPathComponent;
         if ([url.host hasSuffix:@"p.twipple.jp"] && [lastPathComponent isAlphaNumOnly]) {
             result = [NSString stringWithFormat:@"http://p.twipple.jp/show/large/%@", lastPathComponent];
+        } else if ([url.host hasSuffix:@"yfrog.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = [NSString stringWithFormat:@"http://yfrog.com/%@:iphone", lastPathComponent];
+        } else if ([url.host hasSuffix:@"campl.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = [NSString stringWithFormat:@"http://campl.us/%@:800px", lastPathComponent];
+        } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
+            result = [NSString stringWithFormat:@"http://static.ow.ly/photos/normal/%@.jpg", lastPathComponent];
         }
     }
     return result;
@@ -59,6 +71,12 @@
             result = [NSString stringWithFormat:@"http://p.twipple.jp/show/thumb/%@", lastPathComponent];
         } else if ([url.host hasSuffix:@"viddy.com"] && [url.path hasPrefix:@"/video/"]) {
             result = [NSString stringWithFormat:@"http://cdn.viddy.com/images/video/%@.jpg", lastPathComponent];
+        } else if ([url.host hasSuffix:@"yfrog.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = [NSString stringWithFormat:@"http://yfrog.com/%@:small", lastPathComponent];
+        } else if ([url.host hasSuffix:@"campl.us"] && [lastPathComponent isAlphaNumOnly]) {
+            result = [NSString stringWithFormat:@"http://campl.us/%@:120px", lastPathComponent];
+        } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
+            result = [NSString stringWithFormat:@"http://static.ow.ly/photos/normal/%@.jpg", lastPathComponent];
         }
     }
     return result;

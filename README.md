@@ -14,7 +14,7 @@ adds [TweetMarker](http://tweetmarker.net/) support.
 How to install
 --------------
 1. Make sure you have [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) installed.
-2. Download [SimblPluginsForEchofon-1.2.zip](http://github.com/downloads/norio-nomura/SimblPluginsForEchofon/SimblPluginsForEchofon-1.2.zip) (2012/05/31 updated)
+2. Download [SimblPluginsForEchofon-1.3.zip](http://github.com/downloads/norio-nomura/SimblPluginsForEchofon/SimblPluginsForEchofon-1.3.zip) (2012/06/30 updated)
 3. Extract to `~/Library/Application Support/SIMBL/Plugins`
 4. Restart Echofon
 

@@ -53,9 +53,16 @@
 
 @end
 
+@protocol EchofonFastTableView
+
+- (NSArray*)visibleCells;
+
+@end
+
 @protocol EchofonTimelineController
 
 - (void)scrollToUnread;
+- (id<EchofonFastTableView>)table;
 
 @end
 

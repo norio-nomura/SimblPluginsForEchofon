@@ -7,4 +7,7 @@
 
 @interface DisableMarkAsReadCurrentTab : NSObject
 
++ (DisableMarkAsReadCurrentTab*) sharedInstance;
+@property (atomic,assign) BOOL disableAccountClassSetLastMethods;
+
 @end

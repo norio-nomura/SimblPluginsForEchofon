@@ -22,7 +22,8 @@
 		6C514CED157213FD00256D14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C514CEF157213FE00256D14 /* DisableMarkAsReadCurrentTab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisableMarkAsReadCurrentTab-Prefix.pch"; sourceTree = "<group>"; };
 		6C514CFE1572148400256D14 /* DisableMarkAsReadCurrentTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableMarkAsReadCurrentTab.h; sourceTree = "<group>"; };
-		6C514CFF1572148400256D14 /* DisableMarkAsReadCurrentTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisableMarkAsReadCurrentTab.m; sourceTree = "<group>"; };
+		6C514CFF1572148400256D14 /* DisableMarkAsReadCurrentTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DisableMarkAsReadCurrentTab.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6CEDDA63157CC9A400E7FBE1 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EchofonProtocols.h; path = ../Common/EchofonProtocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		6C514CE9157213FD00256D14 /* DisableMarkAsReadCurrentTab */ = {
 			isa = PBXGroup;
 			children = (
+				6CEDDA63157CC9A400E7FBE1 /* EchofonProtocols.h */,
 				6C514CFE1572148400256D14 /* DisableMarkAsReadCurrentTab.h */,
 				6C514CFF1572148400256D14 /* DisableMarkAsReadCurrentTab.m */,
 				6C514CEA157213FD00256D14 /* Supporting Files */,

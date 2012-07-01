@@ -25,6 +25,8 @@
             result = YES;
         } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
             result = YES;
+        } else if ([url.host hasSuffix:@"miil.me"] && [url.path hasPrefix:@"/p/"]) {
+            result = YES;
         }
     }
     return result;
@@ -56,6 +58,8 @@
             result = [NSString stringWithFormat:@"http://campl.us/%@:800px", lastPathComponent];
         } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
             result = [NSString stringWithFormat:@"http://static.ow.ly/photos/normal/%@.jpg", lastPathComponent];
+        } else if ([url.host hasSuffix:@"miil.me"] && [url.path hasPrefix:@"/p/"]) {
+            result = [NSString stringWithFormat:@"%@://%@/%@.jpeg?size=480", url.scheme, url.host, url.path];
         }
     }
     return result;
@@ -77,6 +81,8 @@
             result = [NSString stringWithFormat:@"http://campl.us/%@:120px", lastPathComponent];
         } else if ([url.host hasSuffix:@"ow.ly"] && [url.path hasPrefix:@"/i/"]) {
             result = [NSString stringWithFormat:@"http://static.ow.ly/photos/normal/%@.jpg", lastPathComponent];
+        } else if ([url.host hasSuffix:@"miil.me"] && [url.path hasPrefix:@"/p/"]) {
+            result = [NSString stringWithFormat:@"%@://%@/%@.jpeg?size=60", url.scheme, url.host, url.path];
         }
     }
     return result;

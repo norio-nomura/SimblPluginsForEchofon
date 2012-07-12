@@ -119,7 +119,7 @@
 		6CE4B666154E422F0007B344 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6CE4B669154E422F0007B344 /* Build configuration list for PBXProject "RetweetWithCommentSetInReplyToForEchofon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -177,7 +177,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -204,7 +203,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -222,6 +220,7 @@
 		6CE4B682154E422F0007B344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Info.plist";
@@ -234,6 +233,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Info.plist";

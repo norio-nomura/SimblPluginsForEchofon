@@ -225,7 +225,7 @@
 		6C09B0BE153667DB004258BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6C09B0C1153667DB004258BD /* Build configuration list for PBXProject "SimblPluginsForEchofon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -384,20 +384,19 @@
 		6C09B0C3153667DB004258BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Debug;
 		};
 		6C09B0C4153667DB004258BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Release;
 		};
 		6C09B0E615366950004258BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSION = 1.4;
 			};
@@ -406,6 +405,7 @@
 		6C09B0E715366950004258BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSION = 1.4;
 			};

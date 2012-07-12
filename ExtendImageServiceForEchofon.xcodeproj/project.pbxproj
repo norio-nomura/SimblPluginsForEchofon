@@ -121,7 +121,7 @@
 		6C2E54EE154F5CE500F0B02C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6C2E54F1154F5CE500F0B02C /* Build configuration list for PBXProject "ExtendImageServiceForEchofon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,6 +222,7 @@
 		6C2E550A154F5CE500F0B02C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Info.plist";
@@ -234,6 +235,7 @@
 		6C2E550B154F5CE500F0B02C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Info.plist";

@@ -126,7 +126,7 @@
 		6C197A9014FEFAA900E1667A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6C197A9314FEFAA900E1667A /* Build configuration list for PBXProject "MyTrendsForEchofon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -185,7 +185,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -212,7 +211,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -230,6 +228,7 @@
 		6C197AAC14FEFAAA00E1667A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTrendsForEchofon/MyTrendsForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "MyTrendsForEchofon/MyTrendsForEchofon-Info.plist";
@@ -242,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTrendsForEchofon/MyTrendsForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "MyTrendsForEchofon/MyTrendsForEchofon-Info.plist";

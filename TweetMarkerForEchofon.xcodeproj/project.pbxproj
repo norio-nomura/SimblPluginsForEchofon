@@ -121,7 +121,7 @@
 		6C010FDC14F76255004F01A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6C010FDF14F76255004F01A6 /* Build configuration list for PBXProject "TweetMarkerForEchofon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -181,7 +181,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -208,7 +207,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -226,6 +224,7 @@
 		6C010FF814F76255004F01A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TweetMarkerForEchofon/TweetMarkerForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";
@@ -238,6 +237,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TweetMarkerForEchofon/TweetMarkerForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";

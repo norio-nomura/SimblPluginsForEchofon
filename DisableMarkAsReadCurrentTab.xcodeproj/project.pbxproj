@@ -121,7 +121,7 @@
 		6C514CD7157213FD00256D14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 6C514CDA157213FD00256D14 /* Build configuration list for PBXProject "DisableMarkAsReadCurrentTab" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -179,7 +179,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -206,7 +205,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -224,6 +222,7 @@
 		6C514CF3157213FE00256D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Prefix.pch";
 				INFOPLIST_FILE = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Info.plist";
@@ -236,6 +235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Prefix.pch";
 				INFOPLIST_FILE = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Info.plist";

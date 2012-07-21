@@ -14,212 +14,569 @@
 				6C63B5301536DAC100BB56B9 /* ShellScript */,
 			);
 			dependencies = (
-				6C09B0EB15366961004258BD /* PBXTargetDependency */,
-				6C09B0E915366961004258BD /* PBXTargetDependency */,
-				6C63B5251536CD2900BB56B9 /* PBXTargetDependency */,
-				6C09B0ED15366961004258BD /* PBXTargetDependency */,
-				6CE4B69B154E48B90007B344 /* PBXTargetDependency */,
-				6C514D0815721C3200256D14 /* PBXTargetDependency */,
-				6CAB60A71577712100106AD8 /* PBXTargetDependency */,
+				6CDF1B5615BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B5815BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B5A15BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B5C15BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B5E15BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B6015BA3EC30036FE6F /* PBXTargetDependency */,
+				6CDF1B6215BA3EC30036FE6F /* PBXTargetDependency */,
 			);
 			name = SimblPluginsForEchofon;
 			productName = SimblPluginsForEchofon;
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXBuildFile section */
+		6CDF1A9915BA319B0036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1AA315BA319B0036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1AA115BA319B0036FE6F /* InfoPlist.strings */; };
+		6CDF1ABB15BA33330036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1AC115BA33330036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1ABF15BA33330036FE6F /* InfoPlist.strings */; };
+		6CDF1ACB15BA334B0036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1AD115BA334B0036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1ACF15BA334B0036FE6F /* InfoPlist.strings */; };
+		6CDF1ADB15BA338F0036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1AE115BA338F0036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1ADF15BA338F0036FE6F /* InfoPlist.strings */; };
+		6CDF1AEB15BA339E0036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1AF115BA339E0036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1AEF15BA339E0036FE6F /* InfoPlist.strings */; };
+		6CDF1AFB15BA33B20036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1B0115BA33B20036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1AFF15BA33B20036FE6F /* InfoPlist.strings */; };
+		6CDF1B0B15BA33C00036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
+		6CDF1B1115BA33C00036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B0F15BA33C00036FE6F /* InfoPlist.strings */; };
+		6CDF1B1C15BA34340036FE6F /* TweetMarkerAPI_KEY.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1615BA34340036FE6F /* TweetMarkerAPI_KEY.h */; };
+		6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */; };
+		6CDF1B1E15BA34340036FE6F /* TweetMarkerForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1815BA34340036FE6F /* TweetMarkerForEchofon.h */; };
+		6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1915BA34340036FE6F /* TweetMarkerForEchofon.m */; };
+		6CDF1B2015BA34340036FE6F /* TweetMarkerClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1A15BA34340036FE6F /* TweetMarkerClient.h */; };
+		6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1B15BA34340036FE6F /* TweetMarkerClient.m */; };
+		6CDF1B2815BA34E20036FE6F /* MyTrendsForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2415BA34E20036FE6F /* MyTrendsForEchofon.h */; };
+		6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2515BA34E20036FE6F /* MyTrendsForEchofon.m */; };
+		6CDF1B2A15BA34E20036FE6F /* MyTrendsAccountSettings.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2615BA34E20036FE6F /* MyTrendsAccountSettings.h */; };
+		6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2715BA34E20036FE6F /* MyTrendsAccountSettings.m */; };
+		6CDF1B3215BA35010036FE6F /* ReadabilityAPI_KEY.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2C15BA35010036FE6F /* ReadabilityAPI_KEY.h */; };
+		6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2D15BA35010036FE6F /* ReadabilityAPI_KEY.m */; };
+		6CDF1B3415BA35010036FE6F /* ReadabilityForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2E15BA35010036FE6F /* ReadabilityForEchofon.h */; };
+		6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2F15BA35010036FE6F /* ReadabilityForEchofon.m */; };
+		6CDF1B3615BA35010036FE6F /* ReadabilityClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3015BA35010036FE6F /* ReadabilityClient.h */; };
+		6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3115BA35010036FE6F /* ReadabilityClient.m */; };
+		6CDF1B3A15BA35160036FE6F /* AbsoluteTimeStringForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3815BA35160036FE6F /* AbsoluteTimeStringForEchofon.h */; };
+		6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3915BA35160036FE6F /* AbsoluteTimeStringForEchofon.m */; };
+		6CDF1B3E15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3C15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h */; };
+		6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3D15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m */; };
+		6CDF1B4215BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4015BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h */; };
+		6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4115BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m */; };
+		6CDF1B4615BA356A0036FE6F /* ExtendImageServiceForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4415BA356A0036FE6F /* ExtendImageServiceForEchofon.h */; };
+		6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4515BA356A0036FE6F /* ExtendImageServiceForEchofon.m */; };
+		6CDF1B6415BA3F700036FE6F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1B6315BA3F700036FE6F /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		6C09B0CF1536682F004258BD /* PBXContainerItemProxy */ = {
+		6CDF1B5515BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6C010FE514F76255004F01A6;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDF1A9415BA319B0036FE6F;
 			remoteInfo = TweetMarkerForEchofon;
 		};
-		6C09B0D915366853004258BD /* PBXContainerItemProxy */ = {
+		6CDF1B5715BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6C197A9914FEFAAA00E1667A;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDF1AB915BA33330036FE6F;
 			remoteInfo = MyTrendsForEchofon;
 		};
-		6C09B0E21536685B004258BD /* PBXContainerItemProxy */ = {
+		6CDF1B5915BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CDE8F0B150068CE004D1734;
-			remoteInfo = AbsoluteTimeStringForEchofon;
-		};
-		6C09B0E815366961004258BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C197A9814FEFAAA00E1667A;
-			remoteInfo = MyTrendsForEchofon;
-		};
-		6C09B0EA15366961004258BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C010FE414F76255004F01A6;
-			remoteInfo = TweetMarkerForEchofon;
-		};
-		6C09B0EC15366961004258BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CDE8F0A150068CE004D1734;
-			remoteInfo = AbsoluteTimeStringForEchofon;
-		};
-		6C514CFC1572142C00256D14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6C514CE0157213FD00256D14;
-			remoteInfo = DisableMarkAsReadCurrentTab;
-		};
-		6C514D0715721C3200256D14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C514CDF157213FD00256D14;
-			remoteInfo = DisableMarkAsReadCurrentTab;
-		};
-		6C63B51E1536CBAA00BB56B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6C63B4F91536CB0F00BB56B9;
+			remoteGlobalIDString = 6CDF1AC915BA334B0036FE6F;
 			remoteInfo = ReadabilityForEchofon;
 		};
-		6C63B5241536CD2900BB56B9 /* PBXContainerItemProxy */ = {
+		6CDF1B5B15BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C63B4F81536CB0F00BB56B9;
-			remoteInfo = ReadabilityForEchofon;
+			remoteGlobalIDString = 6CDF1AD915BA338F0036FE6F;
+			remoteInfo = AbsoluteTimeStringForEchofon;
 		};
-		6CAB60A61577712100106AD8 /* PBXContainerItemProxy */ = {
+		6CDF1B5D15BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CD450DB15723E110025D29A /* ExtendImageServiceForEchofon.xcodeproj */;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C2E54F6154F5CE500F0B02C;
-			remoteInfo = ExtendImageServiceForEchofon;
-		};
-		6CD450E215723E110025D29A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CD450DB15723E110025D29A /* ExtendImageServiceForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6C2E54F7154F5CE500F0B02C;
-			remoteInfo = ExtendImageServiceForEchofon;
-		};
-		6CE4B691154E42AE0007B344 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CE4B66F154E422F0007B344;
+			remoteGlobalIDString = 6CDF1AE915BA339E0036FE6F;
 			remoteInfo = RetweetWithCommentSetInReplyToForEchofon;
 		};
-		6CE4B69A154E48B90007B344 /* PBXContainerItemProxy */ = {
+		6CDF1B5F15BA3EC30036FE6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CE4B66E154E422F0007B344;
-			remoteInfo = RetweetWithCommentSetInReplyToForEchofon;
+			remoteGlobalIDString = 6CDF1AF915BA33B20036FE6F;
+			remoteInfo = DisableMarkAsReadCurrentTab;
+		};
+		6CDF1B6115BA3EC30036FE6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C09B0BE153667DB004258BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CDF1B0915BA33C00036FE6F;
+			remoteInfo = ExtendImageServiceForEchofon;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TweetMarkerForEchofon.xcodeproj; sourceTree = "<group>"; };
-		6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MyTrendsForEchofon.xcodeproj; sourceTree = "<group>"; };
-		6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AbsoluteTimeStringForEchofon.xcodeproj; sourceTree = "<group>"; };
-		6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DisableMarkAsReadCurrentTab.xcodeproj; sourceTree = "<group>"; };
-		6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ReadabilityForEchofon.xcodeproj; sourceTree = "<group>"; };
 		6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchofonProtocols.h; sourceTree = "<group>"; };
-		6CD450DB15723E110025D29A /* ExtendImageServiceForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ExtendImageServiceForEchofon.xcodeproj; sourceTree = "<group>"; };
-		6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RetweetWithCommentSetInReplyToForEchofon.xcodeproj; sourceTree = "<group>"; };
+		6CDF1A9515BA319B0036FE6F /* TweetMarkerForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetMarkerForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1A9815BA319B0036FE6F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6CDF1A9B15BA319B0036FE6F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6CDF1A9C15BA319B0036FE6F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6CDF1A9D15BA319B0036FE6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6CDF1AA015BA319B0036FE6F /* TweetMarkerForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetMarkerForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1AA215BA319B0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1AA415BA319B0036FE6F /* TweetMarkerForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetMarkerForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1AB515BA32550036FE6F /* SimblPluginsForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimblPluginsForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1ABA15BA33330036FE6F /* MyTrendsForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTrendsForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1ABE15BA33330036FE6F /* MyTrendsForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTrendsForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1AC015BA33330036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1AC215BA33330036FE6F /* MyTrendsForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrendsForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1ACA15BA334B0036FE6F /* ReadabilityForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadabilityForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1ACE15BA334B0036FE6F /* ReadabilityForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadabilityForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1AD015BA334B0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1AD215BA334B0036FE6F /* ReadabilityForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReadabilityForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1ADA15BA338F0036FE6F /* AbsoluteTimeStringForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteTimeStringForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1ADE15BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AbsoluteTimeStringForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1AE015BA338F0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1AE215BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AbsoluteTimeStringForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1AEA15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetweetWithCommentSetInReplyToForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1AEE15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetweetWithCommentSetInReplyToForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1AF015BA339E0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1AF215BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetweetWithCommentSetInReplyToForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1AFA15BA33B20036FE6F /* DisableMarkAsReadCurrentTab.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisableMarkAsReadCurrentTab.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1AFE15BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DisableMarkAsReadCurrentTab-Info.plist"; sourceTree = "<group>"; };
+		6CDF1B0015BA33B20036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1B0215BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisableMarkAsReadCurrentTab-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1B0A15BA33C00036FE6F /* ExtendImageServiceForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtendImageServiceForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDF1B0E15BA33C00036FE6F /* ExtendImageServiceForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExtendImageServiceForEchofon-Info.plist"; sourceTree = "<group>"; };
+		6CDF1B1015BA33C00036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CDF1B1215BA33C00036FE6F /* ExtendImageServiceForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExtendImageServiceForEchofon-Prefix.pch"; sourceTree = "<group>"; };
+		6CDF1B1615BA34340036FE6F /* TweetMarkerAPI_KEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetMarkerAPI_KEY.h; sourceTree = "<group>"; };
+		6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerAPI_KEY.m; sourceTree = "<group>"; };
+		6CDF1B1815BA34340036FE6F /* TweetMarkerForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B1915BA34340036FE6F /* TweetMarkerForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B1A15BA34340036FE6F /* TweetMarkerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerClient.h; sourceTree = "<group>"; };
+		6CDF1B1B15BA34340036FE6F /* TweetMarkerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerClient.m; sourceTree = "<group>"; };
+		6CDF1B2415BA34E20036FE6F /* MyTrendsForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTrendsForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B2515BA34E20036FE6F /* MyTrendsForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTrendsForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B2615BA34E20036FE6F /* MyTrendsAccountSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTrendsAccountSettings.h; sourceTree = "<group>"; };
+		6CDF1B2715BA34E20036FE6F /* MyTrendsAccountSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTrendsAccountSettings.m; sourceTree = "<group>"; };
+		6CDF1B2C15BA35010036FE6F /* ReadabilityAPI_KEY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ReadabilityAPI_KEY.h; sourceTree = "<group>"; };
+		6CDF1B2D15BA35010036FE6F /* ReadabilityAPI_KEY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadabilityAPI_KEY.m; sourceTree = "<group>"; };
+		6CDF1B2E15BA35010036FE6F /* ReadabilityForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadabilityForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B2F15BA35010036FE6F /* ReadabilityForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadabilityForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B3015BA35010036FE6F /* ReadabilityClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadabilityClient.h; sourceTree = "<group>"; };
+		6CDF1B3115BA35010036FE6F /* ReadabilityClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ReadabilityClient.m; sourceTree = "<group>"; };
+		6CDF1B3815BA35160036FE6F /* AbsoluteTimeStringForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsoluteTimeStringForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B3915BA35160036FE6F /* AbsoluteTimeStringForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsoluteTimeStringForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B3C15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetweetWithCommentSetInReplyToForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B3D15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetweetWithCommentSetInReplyToForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B4015BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisableMarkAsReadCurrentTab.h; sourceTree = "<group>"; };
+		6CDF1B4115BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DisableMarkAsReadCurrentTab.m; sourceTree = "<group>"; };
+		6CDF1B4415BA356A0036FE6F /* ExtendImageServiceForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendImageServiceForEchofon.h; sourceTree = "<group>"; };
+		6CDF1B4515BA356A0036FE6F /* ExtendImageServiceForEchofon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendImageServiceForEchofon.m; sourceTree = "<group>"; };
+		6CDF1B6315BA3F700036FE6F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CDF1A9215BA319B0036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1A9915BA319B0036FE6F /* Cocoa.framework in Frameworks */,
+				6CDF1B6415BA3F700036FE6F /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AB715BA33330036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1ABB15BA33330036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AC715BA334B0036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1ACB15BA334B0036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AD715BA338F0036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1ADB15BA338F0036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AE715BA339E0036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AEB15BA339E0036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AF715BA33B20036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AFB15BA33B20036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1B0715BA33C00036FE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1B0B15BA33C00036FE6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6C09B0BC153667DB004258BD = {
 			isa = PBXGroup;
 			children = (
 				6C63B52C1536D8C000BB56B9 /* Common */,
-				6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */,
-				6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */,
-				6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */,
-				6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */,
-				6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */,
-				6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */,
-				6CD450DB15723E110025D29A /* ExtendImageServiceForEchofon.xcodeproj */,
+				6CDF1A9E15BA319B0036FE6F /* TweetMarkerForEchofon */,
+				6CDF1ABC15BA33330036FE6F /* MyTrendsForEchofon */,
+				6CDF1ACC15BA334B0036FE6F /* ReadabilityForEchofon */,
+				6CDF1ADC15BA338F0036FE6F /* AbsoluteTimeStringForEchofon */,
+				6CDF1AEC15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon */,
+				6CDF1AFC15BA33B20036FE6F /* DisableMarkAsReadCurrentTab */,
+				6CDF1B0C15BA33C00036FE6F /* ExtendImageServiceForEchofon */,
+				6CDF1A9715BA319B0036FE6F /* Frameworks */,
+				6CDF1A9615BA319B0036FE6F /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		6C09B0C91536682E004258BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C09B0D01536682F004258BD /* TweetMarkerForEchofon.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C09B0D315366852004258BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C09B0DA15366853004258BD /* MyTrendsForEchofon.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C09B0DC1536685A004258BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C514CF61572142B00256D14 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C514CFD1572142C00256D14 /* DisableMarkAsReadCurrentTab.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C63B5181536CBAA00BB56B9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6C63B51F1536CBAA00BB56B9 /* ReadabilityForEchofon.bundle */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6C63B52C1536D8C000BB56B9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				6C63B52D1536D8C000BB56B9 /* EchofonProtocols.h */,
+				6CDF1AB515BA32550036FE6F /* SimblPluginsForEchofon-Prefix.pch */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 			wrapsLines = 0;
 		};
-		6CD450DC15723E110025D29A /* Products */ = {
+		6CDF1A9615BA319B0036FE6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CD450E315723E110025D29A /* ExtendImageServiceForEchofon.bundle */,
+				6CDF1A9515BA319B0036FE6F /* TweetMarkerForEchofon.bundle */,
+				6CDF1ABA15BA33330036FE6F /* MyTrendsForEchofon.bundle */,
+				6CDF1ACA15BA334B0036FE6F /* ReadabilityForEchofon.bundle */,
+				6CDF1ADA15BA338F0036FE6F /* AbsoluteTimeStringForEchofon.bundle */,
+				6CDF1AEA15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon.bundle */,
+				6CDF1AFA15BA33B20036FE6F /* DisableMarkAsReadCurrentTab.bundle */,
+				6CDF1B0A15BA33C00036FE6F /* ExtendImageServiceForEchofon.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CE4B68B154E42AE0007B344 /* Products */ = {
+		6CDF1A9715BA319B0036FE6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CE4B692154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.bundle */,
+				6CDF1A9815BA319B0036FE6F /* Cocoa.framework */,
+				6CDF1B6315BA3F700036FE6F /* SystemConfiguration.framework */,
+				6CDF1A9A15BA319B0036FE6F /* Other Frameworks */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CDF1A9A15BA319B0036FE6F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1A9B15BA319B0036FE6F /* AppKit.framework */,
+				6CDF1A9C15BA319B0036FE6F /* CoreData.framework */,
+				6CDF1A9D15BA319B0036FE6F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6CDF1A9E15BA319B0036FE6F /* TweetMarkerForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B1615BA34340036FE6F /* TweetMarkerAPI_KEY.h */,
+				6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */,
+				6CDF1B1815BA34340036FE6F /* TweetMarkerForEchofon.h */,
+				6CDF1B1915BA34340036FE6F /* TweetMarkerForEchofon.m */,
+				6CDF1B1A15BA34340036FE6F /* TweetMarkerClient.h */,
+				6CDF1B1B15BA34340036FE6F /* TweetMarkerClient.m */,
+				6CDF1A9F15BA319B0036FE6F /* Supporting Files */,
+			);
+			path = TweetMarkerForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1A9F15BA319B0036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1AA015BA319B0036FE6F /* TweetMarkerForEchofon-Info.plist */,
+				6CDF1AA115BA319B0036FE6F /* InfoPlist.strings */,
+				6CDF1AA415BA319B0036FE6F /* TweetMarkerForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1ABC15BA33330036FE6F /* MyTrendsForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B2415BA34E20036FE6F /* MyTrendsForEchofon.h */,
+				6CDF1B2515BA34E20036FE6F /* MyTrendsForEchofon.m */,
+				6CDF1B2615BA34E20036FE6F /* MyTrendsAccountSettings.h */,
+				6CDF1B2715BA34E20036FE6F /* MyTrendsAccountSettings.m */,
+				6CDF1ABD15BA33330036FE6F /* Supporting Files */,
+			);
+			path = MyTrendsForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1ABD15BA33330036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1ABE15BA33330036FE6F /* MyTrendsForEchofon-Info.plist */,
+				6CDF1ABF15BA33330036FE6F /* InfoPlist.strings */,
+				6CDF1AC215BA33330036FE6F /* MyTrendsForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1ACC15BA334B0036FE6F /* ReadabilityForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B2C15BA35010036FE6F /* ReadabilityAPI_KEY.h */,
+				6CDF1B2D15BA35010036FE6F /* ReadabilityAPI_KEY.m */,
+				6CDF1B2E15BA35010036FE6F /* ReadabilityForEchofon.h */,
+				6CDF1B2F15BA35010036FE6F /* ReadabilityForEchofon.m */,
+				6CDF1B3015BA35010036FE6F /* ReadabilityClient.h */,
+				6CDF1B3115BA35010036FE6F /* ReadabilityClient.m */,
+				6CDF1ACD15BA334B0036FE6F /* Supporting Files */,
+			);
+			path = ReadabilityForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1ACD15BA334B0036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1ACE15BA334B0036FE6F /* ReadabilityForEchofon-Info.plist */,
+				6CDF1ACF15BA334B0036FE6F /* InfoPlist.strings */,
+				6CDF1AD215BA334B0036FE6F /* ReadabilityForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1ADC15BA338F0036FE6F /* AbsoluteTimeStringForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B3815BA35160036FE6F /* AbsoluteTimeStringForEchofon.h */,
+				6CDF1B3915BA35160036FE6F /* AbsoluteTimeStringForEchofon.m */,
+				6CDF1ADD15BA338F0036FE6F /* Supporting Files */,
+			);
+			path = AbsoluteTimeStringForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1ADD15BA338F0036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1ADE15BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Info.plist */,
+				6CDF1ADF15BA338F0036FE6F /* InfoPlist.strings */,
+				6CDF1AE215BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1AEC15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B3C15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h */,
+				6CDF1B3D15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m */,
+				6CDF1AED15BA339E0036FE6F /* Supporting Files */,
+			);
+			path = RetweetWithCommentSetInReplyToForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1AED15BA339E0036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1AEE15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Info.plist */,
+				6CDF1AEF15BA339E0036FE6F /* InfoPlist.strings */,
+				6CDF1AF215BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1AFC15BA33B20036FE6F /* DisableMarkAsReadCurrentTab */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B4015BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h */,
+				6CDF1B4115BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m */,
+				6CDF1AFD15BA33B20036FE6F /* Supporting Files */,
+			);
+			path = DisableMarkAsReadCurrentTab;
+			sourceTree = "<group>";
+		};
+		6CDF1AFD15BA33B20036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1AFE15BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Info.plist */,
+				6CDF1AFF15BA33B20036FE6F /* InfoPlist.strings */,
+				6CDF1B0215BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDF1B0C15BA33C00036FE6F /* ExtendImageServiceForEchofon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B4415BA356A0036FE6F /* ExtendImageServiceForEchofon.h */,
+				6CDF1B4515BA356A0036FE6F /* ExtendImageServiceForEchofon.m */,
+				6CDF1B0D15BA33C00036FE6F /* Supporting Files */,
+			);
+			path = ExtendImageServiceForEchofon;
+			sourceTree = "<group>";
+		};
+		6CDF1B0D15BA33C00036FE6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CDF1B0E15BA33C00036FE6F /* ExtendImageServiceForEchofon-Info.plist */,
+				6CDF1B0F15BA33C00036FE6F /* InfoPlist.strings */,
+				6CDF1B1215BA33C00036FE6F /* ExtendImageServiceForEchofon-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CDF1A9415BA319B0036FE6F /* TweetMarkerForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1AA515BA319B0036FE6F /* Build configuration list for PBXNativeTarget "TweetMarkerForEchofon" */;
+			buildPhases = (
+				6CDF1A9115BA319B0036FE6F /* Sources */,
+				6CDF1A9215BA319B0036FE6F /* Frameworks */,
+				6CDF1A9315BA319B0036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetMarkerForEchofon;
+			productName = TweetMarkerForEchofon;
+			productReference = 6CDF1A9515BA319B0036FE6F /* TweetMarkerForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1AB915BA33330036FE6F /* MyTrendsForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1AC315BA33330036FE6F /* Build configuration list for PBXNativeTarget "MyTrendsForEchofon" */;
+			buildPhases = (
+				6CDF1AB615BA33330036FE6F /* Sources */,
+				6CDF1AB715BA33330036FE6F /* Frameworks */,
+				6CDF1AB815BA33330036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTrendsForEchofon;
+			productName = MyTrendsForEchofon;
+			productReference = 6CDF1ABA15BA33330036FE6F /* MyTrendsForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1AC915BA334B0036FE6F /* ReadabilityForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1AD315BA334B0036FE6F /* Build configuration list for PBXNativeTarget "ReadabilityForEchofon" */;
+			buildPhases = (
+				6CDF1AC615BA334B0036FE6F /* Sources */,
+				6CDF1AC715BA334B0036FE6F /* Frameworks */,
+				6CDF1AC815BA334B0036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadabilityForEchofon;
+			productName = ReadabilityForEchofon;
+			productReference = 6CDF1ACA15BA334B0036FE6F /* ReadabilityForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1AD915BA338F0036FE6F /* AbsoluteTimeStringForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1AE315BA338F0036FE6F /* Build configuration list for PBXNativeTarget "AbsoluteTimeStringForEchofon" */;
+			buildPhases = (
+				6CDF1AD615BA338F0036FE6F /* Sources */,
+				6CDF1AD715BA338F0036FE6F /* Frameworks */,
+				6CDF1AD815BA338F0036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbsoluteTimeStringForEchofon;
+			productName = AbsoluteTimeStringForEchofon;
+			productReference = 6CDF1ADA15BA338F0036FE6F /* AbsoluteTimeStringForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1AE915BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1AF315BA339E0036FE6F /* Build configuration list for PBXNativeTarget "RetweetWithCommentSetInReplyToForEchofon" */;
+			buildPhases = (
+				6CDF1AE615BA339E0036FE6F /* Sources */,
+				6CDF1AE715BA339E0036FE6F /* Frameworks */,
+				6CDF1AE815BA339E0036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetweetWithCommentSetInReplyToForEchofon;
+			productName = RetweetWithCommentSetInReplyToForEchofon;
+			productReference = 6CDF1AEA15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1AF915BA33B20036FE6F /* DisableMarkAsReadCurrentTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1B0315BA33B20036FE6F /* Build configuration list for PBXNativeTarget "DisableMarkAsReadCurrentTab" */;
+			buildPhases = (
+				6CDF1AF615BA33B20036FE6F /* Sources */,
+				6CDF1AF715BA33B20036FE6F /* Frameworks */,
+				6CDF1AF815BA33B20036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisableMarkAsReadCurrentTab;
+			productName = DisableMarkAsReadCurrentTab;
+			productReference = 6CDF1AFA15BA33B20036FE6F /* DisableMarkAsReadCurrentTab.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6CDF1B0915BA33C00036FE6F /* ExtendImageServiceForEchofon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDF1B1315BA33C00036FE6F /* Build configuration list for PBXNativeTarget "ExtendImageServiceForEchofon" */;
+			buildPhases = (
+				6CDF1B0615BA33C00036FE6F /* Sources */,
+				6CDF1B0715BA33C00036FE6F /* Frameworks */,
+				6CDF1B0815BA33C00036FE6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtendImageServiceForEchofon;
+			productName = ExtendImageServiceForEchofon;
+			productReference = 6CDF1B0A15BA33C00036FE6F /* ExtendImageServiceForEchofon.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6C09B0BE153667DB004258BD /* Project object */ = {
@@ -235,95 +592,104 @@
 				en,
 			);
 			mainGroup = 6C09B0BC153667DB004258BD;
+			productRefGroup = 6CDF1A9615BA319B0036FE6F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6C09B0DC1536685A004258BD /* Products */;
-					ProjectRef = 6C09B0DB1536685A004258BD /* AbsoluteTimeStringForEchofon.xcodeproj */;
-				},
-				{
-					ProductGroup = 6C514CF61572142B00256D14 /* Products */;
-					ProjectRef = 6C514CF51572142B00256D14 /* DisableMarkAsReadCurrentTab.xcodeproj */;
-				},
-				{
-					ProductGroup = 6CD450DC15723E110025D29A /* Products */;
-					ProjectRef = 6CD450DB15723E110025D29A /* ExtendImageServiceForEchofon.xcodeproj */;
-				},
-				{
-					ProductGroup = 6C09B0D315366852004258BD /* Products */;
-					ProjectRef = 6C09B0D215366852004258BD /* MyTrendsForEchofon.xcodeproj */;
-				},
-				{
-					ProductGroup = 6C63B5181536CBAA00BB56B9 /* Products */;
-					ProjectRef = 6C63B5171536CBAA00BB56B9 /* ReadabilityForEchofon.xcodeproj */;
-				},
-				{
-					ProductGroup = 6CE4B68B154E42AE0007B344 /* Products */;
-					ProjectRef = 6CE4B68A154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.xcodeproj */;
-				},
-				{
-					ProductGroup = 6C09B0C91536682E004258BD /* Products */;
-					ProjectRef = 6C09B0C81536682E004258BD /* TweetMarkerForEchofon.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
+				6CDF1A9415BA319B0036FE6F /* TweetMarkerForEchofon */,
+				6CDF1AB915BA33330036FE6F /* MyTrendsForEchofon */,
+				6CDF1AC915BA334B0036FE6F /* ReadabilityForEchofon */,
+				6CDF1AD915BA338F0036FE6F /* AbsoluteTimeStringForEchofon */,
+				6CDF1AE915BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon */,
+				6CDF1AF915BA33B20036FE6F /* DisableMarkAsReadCurrentTab */,
+				6CDF1B0915BA33C00036FE6F /* ExtendImageServiceForEchofon */,
 				6C09B0E415366950004258BD /* SimblPluginsForEchofon */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		6C09B0D01536682F004258BD /* TweetMarkerForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TweetMarkerForEchofon.bundle;
-			remoteRef = 6C09B0CF1536682F004258BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+/* Begin PBXResourcesBuildPhase section */
+		6CDF1A9315BA319B0036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AA315BA319B0036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B1C15BA34340036FE6F /* TweetMarkerAPI_KEY.h in Resources */,
+				6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Resources */,
+				6CDF1B1E15BA34340036FE6F /* TweetMarkerForEchofon.h in Resources */,
+				6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Resources */,
+				6CDF1B2015BA34340036FE6F /* TweetMarkerClient.h in Resources */,
+				6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C09B0DA15366853004258BD /* MyTrendsForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MyTrendsForEchofon.bundle;
-			remoteRef = 6C09B0D915366853004258BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1AB815BA33330036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AC115BA33330036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B2815BA34E20036FE6F /* MyTrendsForEchofon.h in Resources */,
+				6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Resources */,
+				6CDF1B2A15BA34E20036FE6F /* MyTrendsAccountSettings.h in Resources */,
+				6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C09B0E31536685B004258BD /* AbsoluteTimeStringForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AbsoluteTimeStringForEchofon.bundle;
-			remoteRef = 6C09B0E21536685B004258BD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1AC815BA334B0036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AD115BA334B0036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B3215BA35010036FE6F /* ReadabilityAPI_KEY.h in Resources */,
+				6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Resources */,
+				6CDF1B3415BA35010036FE6F /* ReadabilityForEchofon.h in Resources */,
+				6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Resources */,
+				6CDF1B3615BA35010036FE6F /* ReadabilityClient.h in Resources */,
+				6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C514CFD1572142C00256D14 /* DisableMarkAsReadCurrentTab.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DisableMarkAsReadCurrentTab.bundle;
-			remoteRef = 6C514CFC1572142C00256D14 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1AD815BA338F0036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AE115BA338F0036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B3A15BA35160036FE6F /* AbsoluteTimeStringForEchofon.h in Resources */,
+				6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C63B51F1536CBAA00BB56B9 /* ReadabilityForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReadabilityForEchofon.bundle;
-			remoteRef = 6C63B51E1536CBAA00BB56B9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1AE815BA339E0036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1AF115BA339E0036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B3E15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h in Resources */,
+				6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CD450E315723E110025D29A /* ExtendImageServiceForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ExtendImageServiceForEchofon.bundle;
-			remoteRef = 6CD450E215723E110025D29A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1AF815BA33B20036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1B0115BA33B20036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B4215BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h in Resources */,
+				6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CE4B692154E42AE0007B344 /* RetweetWithCommentSetInReplyToForEchofon.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RetweetWithCommentSetInReplyToForEchofon.bundle;
-			remoteRef = 6CE4B691154E42AE0007B344 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+		6CDF1B0815BA33C00036FE6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDF1B1115BA33C00036FE6F /* InfoPlist.strings in Resources */,
+				6CDF1B4615BA356A0036FE6F /* ExtendImageServiceForEchofon.h in Resources */,
+				6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXReferenceProxy section */
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		6C63B5301536DAC100BB56B9 /* ShellScript */ = {
@@ -342,54 +708,210 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
+/* Begin PBXSourcesBuildPhase section */
+		6CDF1A9115BA319B0036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AB615BA33330036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AC615BA334B0036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AD615BA338F0036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AE615BA339E0036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1AF615BA33B20036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDF1B0615BA33C00036FE6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin PBXTargetDependency section */
-		6C09B0E915366961004258BD /* PBXTargetDependency */ = {
+		6CDF1B5615BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MyTrendsForEchofon;
-			targetProxy = 6C09B0E815366961004258BD /* PBXContainerItemProxy */;
+			target = 6CDF1A9415BA319B0036FE6F /* TweetMarkerForEchofon */;
+			targetProxy = 6CDF1B5515BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6C09B0EB15366961004258BD /* PBXTargetDependency */ = {
+		6CDF1B5815BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TweetMarkerForEchofon;
-			targetProxy = 6C09B0EA15366961004258BD /* PBXContainerItemProxy */;
+			target = 6CDF1AB915BA33330036FE6F /* MyTrendsForEchofon */;
+			targetProxy = 6CDF1B5715BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6C09B0ED15366961004258BD /* PBXTargetDependency */ = {
+		6CDF1B5A15BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AbsoluteTimeStringForEchofon;
-			targetProxy = 6C09B0EC15366961004258BD /* PBXContainerItemProxy */;
+			target = 6CDF1AC915BA334B0036FE6F /* ReadabilityForEchofon */;
+			targetProxy = 6CDF1B5915BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6C514D0815721C3200256D14 /* PBXTargetDependency */ = {
+		6CDF1B5C15BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DisableMarkAsReadCurrentTab;
-			targetProxy = 6C514D0715721C3200256D14 /* PBXContainerItemProxy */;
+			target = 6CDF1AD915BA338F0036FE6F /* AbsoluteTimeStringForEchofon */;
+			targetProxy = 6CDF1B5B15BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6C63B5251536CD2900BB56B9 /* PBXTargetDependency */ = {
+		6CDF1B5E15BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ReadabilityForEchofon;
-			targetProxy = 6C63B5241536CD2900BB56B9 /* PBXContainerItemProxy */;
+			target = 6CDF1AE915BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon */;
+			targetProxy = 6CDF1B5D15BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6CAB60A71577712100106AD8 /* PBXTargetDependency */ = {
+		6CDF1B6015BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ExtendImageServiceForEchofon;
-			targetProxy = 6CAB60A61577712100106AD8 /* PBXContainerItemProxy */;
+			target = 6CDF1AF915BA33B20036FE6F /* DisableMarkAsReadCurrentTab */;
+			targetProxy = 6CDF1B5F15BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
-		6CE4B69B154E48B90007B344 /* PBXTargetDependency */ = {
+		6CDF1B6215BA3EC30036FE6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RetweetWithCommentSetInReplyToForEchofon;
-			targetProxy = 6CE4B69A154E48B90007B344 /* PBXContainerItemProxy */;
+			target = 6CDF1B0915BA33C00036FE6F /* ExtendImageServiceForEchofon */;
+			targetProxy = 6CDF1B6115BA3EC30036FE6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CDF1AA115BA319B0036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1AA215BA319B0036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1ABF15BA33330036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1AC015BA33330036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1ACF15BA334B0036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1AD015BA334B0036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1ADF15BA338F0036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1AE015BA338F0036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1AEF15BA339E0036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1AF015BA339E0036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1AFF15BA33B20036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1B0015BA33B20036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CDF1B0F15BA33C00036FE6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CDF1B1015BA33C00036FE6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6C09B0C3153667DB004258BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/SimblPluginsForEchofon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		6C09B0C4153667DB004258BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/SimblPluginsForEchofon-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -411,6 +933,132 @@
 			};
 			name = Release;
 		};
+		6CDF1AA615BA319B0036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1AA715BA319B0036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TweetMarkerForEchofon/TweetMarkerForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1AC415BA33330036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MyTrendsForEchofon/MyTrendsForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1AC515BA33330036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MyTrendsForEchofon/MyTrendsForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1AD415BA334B0036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ReadabilityForEchofon/ReadabilityForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1AD515BA334B0036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ReadabilityForEchofon/ReadabilityForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1AE415BA338F0036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AbsoluteTimeStringForEchofon/AbsoluteTimeStringForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1AE515BA338F0036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AbsoluteTimeStringForEchofon/AbsoluteTimeStringForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1AF415BA339E0036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1AF515BA339E0036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RetweetWithCommentSetInReplyToForEchofon/RetweetWithCommentSetInReplyToForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1B0415BA33B20036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1B0515BA33B20036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DisableMarkAsReadCurrentTab/DisableMarkAsReadCurrentTab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CDF1B1415BA33C00036FE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CDF1B1515BA33C00036FE6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +1076,69 @@
 			buildConfigurations = (
 				6C09B0E615366950004258BD /* Debug */,
 				6C09B0E715366950004258BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1AA515BA319B0036FE6F /* Build configuration list for PBXNativeTarget "TweetMarkerForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1AA615BA319B0036FE6F /* Debug */,
+				6CDF1AA715BA319B0036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1AC315BA33330036FE6F /* Build configuration list for PBXNativeTarget "MyTrendsForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1AC415BA33330036FE6F /* Debug */,
+				6CDF1AC515BA33330036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1AD315BA334B0036FE6F /* Build configuration list for PBXNativeTarget "ReadabilityForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1AD415BA334B0036FE6F /* Debug */,
+				6CDF1AD515BA334B0036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1AE315BA338F0036FE6F /* Build configuration list for PBXNativeTarget "AbsoluteTimeStringForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1AE415BA338F0036FE6F /* Debug */,
+				6CDF1AE515BA338F0036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1AF315BA339E0036FE6F /* Build configuration list for PBXNativeTarget "RetweetWithCommentSetInReplyToForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1AF415BA339E0036FE6F /* Debug */,
+				6CDF1AF515BA339E0036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1B0315BA33B20036FE6F /* Build configuration list for PBXNativeTarget "DisableMarkAsReadCurrentTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1B0415BA33B20036FE6F /* Debug */,
+				6CDF1B0515BA33B20036FE6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CDF1B1315BA33C00036FE6F /* Build configuration list for PBXNativeTarget "ExtendImageServiceForEchofon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDF1B1415BA33C00036FE6F /* Debug */,
+				6CDF1B1515BA33C00036FE6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

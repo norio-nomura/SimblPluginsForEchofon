@@ -235,12 +235,14 @@
 		6C2E550B154F5CE500F0B02C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: Norio Nomura";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Prefix.pch";
 				INFOPLIST_FILE = "ExtendImageServiceForEchofon/ExtendImageServiceForEchofon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

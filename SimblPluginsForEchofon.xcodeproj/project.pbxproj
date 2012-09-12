@@ -42,30 +42,18 @@
 		6CDF1B0115BA33B20036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1AFF15BA33B20036FE6F /* InfoPlist.strings */; };
 		6CDF1B0B15BA33C00036FE6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1A9815BA319B0036FE6F /* Cocoa.framework */; };
 		6CDF1B1115BA33C00036FE6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B0F15BA33C00036FE6F /* InfoPlist.strings */; };
-		6CDF1B1C15BA34340036FE6F /* TweetMarkerAPI_KEY.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1615BA34340036FE6F /* TweetMarkerAPI_KEY.h */; };
-		6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */; };
-		6CDF1B1E15BA34340036FE6F /* TweetMarkerForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1815BA34340036FE6F /* TweetMarkerForEchofon.h */; };
-		6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1915BA34340036FE6F /* TweetMarkerForEchofon.m */; };
-		6CDF1B2015BA34340036FE6F /* TweetMarkerClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1A15BA34340036FE6F /* TweetMarkerClient.h */; };
-		6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1B15BA34340036FE6F /* TweetMarkerClient.m */; };
-		6CDF1B2815BA34E20036FE6F /* MyTrendsForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2415BA34E20036FE6F /* MyTrendsForEchofon.h */; };
-		6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2515BA34E20036FE6F /* MyTrendsForEchofon.m */; };
-		6CDF1B2A15BA34E20036FE6F /* MyTrendsAccountSettings.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2615BA34E20036FE6F /* MyTrendsAccountSettings.h */; };
-		6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2715BA34E20036FE6F /* MyTrendsAccountSettings.m */; };
-		6CDF1B3215BA35010036FE6F /* ReadabilityAPI_KEY.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2C15BA35010036FE6F /* ReadabilityAPI_KEY.h */; };
-		6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2D15BA35010036FE6F /* ReadabilityAPI_KEY.m */; };
-		6CDF1B3415BA35010036FE6F /* ReadabilityForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2E15BA35010036FE6F /* ReadabilityForEchofon.h */; };
-		6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2F15BA35010036FE6F /* ReadabilityForEchofon.m */; };
-		6CDF1B3615BA35010036FE6F /* ReadabilityClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3015BA35010036FE6F /* ReadabilityClient.h */; };
-		6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3115BA35010036FE6F /* ReadabilityClient.m */; };
-		6CDF1B3A15BA35160036FE6F /* AbsoluteTimeStringForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3815BA35160036FE6F /* AbsoluteTimeStringForEchofon.h */; };
-		6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3915BA35160036FE6F /* AbsoluteTimeStringForEchofon.m */; };
-		6CDF1B3E15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3C15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h */; };
-		6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3D15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m */; };
-		6CDF1B4215BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4015BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h */; };
-		6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4115BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m */; };
-		6CDF1B4615BA356A0036FE6F /* ExtendImageServiceForEchofon.h in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4415BA356A0036FE6F /* ExtendImageServiceForEchofon.h */; };
-		6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Resources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4515BA356A0036FE6F /* ExtendImageServiceForEchofon.m */; };
+		6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */; };
+		6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1915BA34340036FE6F /* TweetMarkerForEchofon.m */; };
+		6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B1B15BA34340036FE6F /* TweetMarkerClient.m */; };
+		6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2515BA34E20036FE6F /* MyTrendsForEchofon.m */; };
+		6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2715BA34E20036FE6F /* MyTrendsAccountSettings.m */; };
+		6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2D15BA35010036FE6F /* ReadabilityAPI_KEY.m */; };
+		6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B2F15BA35010036FE6F /* ReadabilityForEchofon.m */; };
+		6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3115BA35010036FE6F /* ReadabilityClient.m */; };
+		6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3915BA35160036FE6F /* AbsoluteTimeStringForEchofon.m */; };
+		6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B3D15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m */; };
+		6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4115BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m */; };
+		6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDF1B4515BA356A0036FE6F /* ExtendImageServiceForEchofon.m */; };
 		6CDF1B6415BA3F700036FE6F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDF1B6315BA3F700036FE6F /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -614,12 +602,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1AA315BA319B0036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B1C15BA34340036FE6F /* TweetMarkerAPI_KEY.h in Resources */,
-				6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Resources */,
-				6CDF1B1E15BA34340036FE6F /* TweetMarkerForEchofon.h in Resources */,
-				6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Resources */,
-				6CDF1B2015BA34340036FE6F /* TweetMarkerClient.h in Resources */,
-				6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,10 +610,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1AC115BA33330036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B2815BA34E20036FE6F /* MyTrendsForEchofon.h in Resources */,
-				6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Resources */,
-				6CDF1B2A15BA34E20036FE6F /* MyTrendsAccountSettings.h in Resources */,
-				6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,12 +618,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1AD115BA334B0036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B3215BA35010036FE6F /* ReadabilityAPI_KEY.h in Resources */,
-				6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Resources */,
-				6CDF1B3415BA35010036FE6F /* ReadabilityForEchofon.h in Resources */,
-				6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Resources */,
-				6CDF1B3615BA35010036FE6F /* ReadabilityClient.h in Resources */,
-				6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,8 +626,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1AE115BA338F0036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B3A15BA35160036FE6F /* AbsoluteTimeStringForEchofon.h in Resources */,
-				6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,8 +634,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1AF115BA339E0036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B3E15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.h in Resources */,
-				6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,8 +642,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1B0115BA33B20036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B4215BA354E0036FE6F /* DisableMarkAsReadCurrentTab.h in Resources */,
-				6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,8 +650,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDF1B1115BA33C00036FE6F /* InfoPlist.strings in Resources */,
-				6CDF1B4615BA356A0036FE6F /* ExtendImageServiceForEchofon.h in Resources */,
-				6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +677,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B1D15BA34340036FE6F /* TweetMarkerAPI_KEY.m in Sources */,
+				6CDF1B1F15BA34340036FE6F /* TweetMarkerForEchofon.m in Sources */,
+				6CDF1B2115BA34340036FE6F /* TweetMarkerClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +687,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B2915BA34E20036FE6F /* MyTrendsForEchofon.m in Sources */,
+				6CDF1B2B15BA34E20036FE6F /* MyTrendsAccountSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +696,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B3315BA35010036FE6F /* ReadabilityAPI_KEY.m in Sources */,
+				6CDF1B3515BA35010036FE6F /* ReadabilityForEchofon.m in Sources */,
+				6CDF1B3715BA35010036FE6F /* ReadabilityClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +706,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B3B15BA35160036FE6F /* AbsoluteTimeStringForEchofon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B3F15BA35290036FE6F /* RetweetWithCommentSetInReplyToForEchofon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +722,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B4315BA354E0036FE6F /* DisableMarkAsReadCurrentTab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1B4715BA356A0036FE6F /* ExtendImageServiceForEchofon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

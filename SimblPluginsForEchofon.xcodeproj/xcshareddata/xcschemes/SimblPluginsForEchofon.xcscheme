@@ -76,7 +76,7 @@
          </ExecutionAction>
       </PostActions>
       <PathRunnable
-         FilePath = "/Applications/Echofon.app">
+         FilePath = "/Volumes/Echofon/Echofon.app">
       </PathRunnable>
       <AdditionalOptions>
       </AdditionalOptions>

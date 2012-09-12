@@ -30,7 +30,7 @@
 	<array>
 		<dict>
 			<key>MinBundleVersion</key>
-			<string>203</string>
+			<string>2</string>
 			<key>BundleIdentifier</key>
 			<string>com.echofon.Echofon</string>
 		</dict>

@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'DisableMarkAsReadCurrentTab' target in the 'DisableMarkAsReadCurrentTab' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

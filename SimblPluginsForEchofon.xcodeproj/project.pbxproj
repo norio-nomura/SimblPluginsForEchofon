@@ -118,32 +118,25 @@
 		6CDF1A9D15BA319B0036FE6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CDF1AA015BA319B0036FE6F /* TweetMarkerForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetMarkerForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1AA215BA319B0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1AA415BA319B0036FE6F /* TweetMarkerForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetMarkerForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1AB515BA32550036FE6F /* SimblPluginsForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimblPluginsForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1ABA15BA33330036FE6F /* MyTrendsForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTrendsForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1ABE15BA33330036FE6F /* MyTrendsForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyTrendsForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1AC015BA33330036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1AC215BA33330036FE6F /* MyTrendsForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTrendsForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1ACA15BA334B0036FE6F /* ReadabilityForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadabilityForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1ACE15BA334B0036FE6F /* ReadabilityForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadabilityForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1AD015BA334B0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1AD215BA334B0036FE6F /* ReadabilityForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReadabilityForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1ADA15BA338F0036FE6F /* AbsoluteTimeStringForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbsoluteTimeStringForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1ADE15BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AbsoluteTimeStringForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1AE015BA338F0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1AE215BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AbsoluteTimeStringForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1AEA15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetweetWithCommentSetInReplyToForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1AEE15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetweetWithCommentSetInReplyToForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1AF015BA339E0036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1AF215BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetweetWithCommentSetInReplyToForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1AFA15BA33B20036FE6F /* DisableMarkAsReadCurrentTab.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisableMarkAsReadCurrentTab.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1AFE15BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DisableMarkAsReadCurrentTab-Info.plist"; sourceTree = "<group>"; };
 		6CDF1B0015BA33B20036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1B0215BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisableMarkAsReadCurrentTab-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1B0A15BA33C00036FE6F /* ExtendImageServiceForEchofon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtendImageServiceForEchofon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDF1B0E15BA33C00036FE6F /* ExtendImageServiceForEchofon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExtendImageServiceForEchofon-Info.plist"; sourceTree = "<group>"; };
 		6CDF1B1015BA33C00036FE6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CDF1B1215BA33C00036FE6F /* ExtendImageServiceForEchofon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExtendImageServiceForEchofon-Prefix.pch"; sourceTree = "<group>"; };
 		6CDF1B1615BA34340036FE6F /* TweetMarkerAPI_KEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetMarkerAPI_KEY.h; sourceTree = "<group>"; };
 		6CDF1B1715BA34340036FE6F /* TweetMarkerAPI_KEY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetMarkerAPI_KEY.m; sourceTree = "<group>"; };
 		6CDF1B1815BA34340036FE6F /* TweetMarkerForEchofon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetMarkerForEchofon.h; sourceTree = "<group>"; };
@@ -311,7 +304,6 @@
 			children = (
 				6CDF1AA015BA319B0036FE6F /* TweetMarkerForEchofon-Info.plist */,
 				6CDF1AA115BA319B0036FE6F /* InfoPlist.strings */,
-				6CDF1AA415BA319B0036FE6F /* TweetMarkerForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -333,7 +325,6 @@
 			children = (
 				6CDF1ABE15BA33330036FE6F /* MyTrendsForEchofon-Info.plist */,
 				6CDF1ABF15BA33330036FE6F /* InfoPlist.strings */,
-				6CDF1AC215BA33330036FE6F /* MyTrendsForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -357,7 +348,6 @@
 			children = (
 				6CDF1ACE15BA334B0036FE6F /* ReadabilityForEchofon-Info.plist */,
 				6CDF1ACF15BA334B0036FE6F /* InfoPlist.strings */,
-				6CDF1AD215BA334B0036FE6F /* ReadabilityForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -377,7 +367,6 @@
 			children = (
 				6CDF1ADE15BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Info.plist */,
 				6CDF1ADF15BA338F0036FE6F /* InfoPlist.strings */,
-				6CDF1AE215BA338F0036FE6F /* AbsoluteTimeStringForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -397,7 +386,6 @@
 			children = (
 				6CDF1AEE15BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Info.plist */,
 				6CDF1AEF15BA339E0036FE6F /* InfoPlist.strings */,
-				6CDF1AF215BA339E0036FE6F /* RetweetWithCommentSetInReplyToForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -417,7 +405,6 @@
 			children = (
 				6CDF1AFE15BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Info.plist */,
 				6CDF1AFF15BA33B20036FE6F /* InfoPlist.strings */,
-				6CDF1B0215BA33B20036FE6F /* DisableMarkAsReadCurrentTab-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -437,7 +424,6 @@
 			children = (
 				6CDF1B0E15BA33C00036FE6F /* ExtendImageServiceForEchofon-Info.plist */,
 				6CDF1B0F15BA33C00036FE6F /* InfoPlist.strings */,
-				6CDF1B1215BA33C00036FE6F /* ExtendImageServiceForEchofon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

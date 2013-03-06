@@ -9,7 +9,7 @@
 #import "TweetMarkerClient.h"
 
 NSString * const kTweetMarker = @"TweetMarker";
-NSString * const kTweetMarkerMenuTitle = @"set Tweet Marker";
+NSString * const kTweetMarkerMenuTitle = @"Set Tweet Marker";
 
 @implementation NSObject(TweetMarkerForEchofon)
 

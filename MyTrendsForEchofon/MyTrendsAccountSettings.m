@@ -30,7 +30,7 @@
     [_client setOauthConsumerSecret:[_trendsConnection consumerSecret]];
     [_client setOauthToken:[_trendsConnection accessToken]];
     [_client setOauthTokenSecret:[_trendsConnection accessSecret]];
-    [_client get:@"https://api.twitter.com/1/account/settings.json"];
+    [_client get:@"https://api.twitter.com/1.1/account/settings.json"];
 }
 
 -(void)HTTPClient:(id<EchofonHTTPClient>)client didFail:(id)error
@@ -51,12 +51,12 @@
                 }
             }
         }
-        NSString* url = [NSString stringWithFormat:@"%@/trends/%@.json", [_trendsConnection apiBase], woeid];
+        NSString* url = [NSString stringWithFormat:@"%@/trends/place.json", [_trendsConnection apiBase]];
         [_trendsConnection createConnection];
         id<EchofonHTTPClient> conn;
         object_getInstanceVariable(_trendsConnection, "conn", (void**)&conn);
         if (conn) {
-            [conn get:url parameters:[NSDictionary dictionary]];
+            [conn get:url parameters:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%@", woeid] forKey:@"id"]];
         }
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0440"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -43,7 +44,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "mkdir -p ~/Library/Application\ Support/SIMBL/Plugins/&#10;cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;for bundle in ${TARGET_BUILD_DIR}/*.bundle; do&#10;    export bundle_name=`basename ${bundle}`&#10;    [ -d ${bundle_name} ] &amp;&amp; mv ${bundle_name} ${bundle_name}.backup&#10;    ln -sf ${bundle} ${bundle_name}&#10;done">
+               scriptText = "mkdir -p ~/Library/Application\ Support/SIMBL/Plugins/&#10;cd ~/Library/Application\ Support/SIMBL/Plugins/&#10;for bundle in ${TARGET_BUILD_DIR}/*.bundle; do&#10;    export bundle_name=`basename ${bundle}`&#10;    [ -d ${bundle_name} ] &amp;&amp; mv ${bundle_name} ${bundle_name}.backup&#10;    cp -pR ${bundle} ${bundle_name}&#10;done">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"

@@ -1,5 +1,12 @@
 SIMBL Plugins for Echofon
 ====================================
+*These plugins are outdated. 2013/12/17*
+-------
+I know some plugins don't work with current Echofon for Mac 1.8.0 (303).
+But, I will not update this because I'm not using Echofon anymore.
+
+Thank you for your understanding,
+
 Plugins for [Echofon for Mac](http://www.echofon.com/twitter/mac)
 ------- 
 - TweetMarkerForEchofon Plugin

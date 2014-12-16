@@ -1,5 +1,7 @@
 SIMBL Plugins for Echofon
 ====================================
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/norio-nomura/SimblPluginsForEchofon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *These plugins are outdated. 2013/12/17*
 -------
 I know some plugins don't work with current Echofon for Mac 1.8.0 (303).
